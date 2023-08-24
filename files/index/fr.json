@@ -1,0 +1,17 @@
+{
+    "intro-title-top": "Oubliez les batteries déchargées avec QR-Charge",
+    "intro-subtitle-top": "Louez une banque d’alimentation quand vous en avez besoin, à tout moment, et rendez-la facilement.",
+    "intro-bottom-title": "Restez connectés non-stop avec ce chargeur pratique!",
+    "rent-title": "Comment louer une banque d’alimentation?",
+    "rent-text-title": [
+        "Téléchargez l’application QrCharge",
+        "Scannez le QR-code",
+        "Rechargez",
+        "Retour."
+    ],
+    "rent-text-text":[
+        "du terminal le plus proche, ou bien entrez le numéro du QR-code dans l’application",
+        "votre iPhone, Android ou même iQos. Emportez la banque d’alimentation et rechargez votre appareil.",
+        "Appuyez sur un bouton pour effectuer le retour à la station de votre choix"
+    ]
+}

@@ -3,40 +3,45 @@
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
     <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230824091510">
-    <title>Home</title>
-</head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.min.css?_v=20230824224612">
+        <title>Home</title>
+    </head>
     <body>
         <div class="wrapper">
             <header class="header">
-    <div class="container">
-        <div class="header__body">
-            <div class="header__logo">
-                <a href="./index.html">
-                    <img src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
-                </a>
-            </div>
-            <div class="header__burger">
-                <span>
+                <div class="container">
+                    <div class="header__body">
+                        <div class="header__logo">
+                            <a href="./index.html">
+                                <img src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
+                            </a>
+                        </div>
+                        <select id="language" name="language" id="language">
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                        </select>
+                        <div class="header__burger">
+                            <span>
 
-                </span>
-            </div>
-            <nav class="header__menu">
-                <ul><li><a class="header__link" href="./for-business.html">For business</a></li></ul>
-            </nav>
-        </div>
-    </div>
-</header>
+                            </span>
+                        </div>
+                        <nav class="header__menu">
+                            <ul><li><a class="header__link" href="./for-business.html">For business</a></li></ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
             <main class="content">
                 <section class="intro section">
                     <div class="container">
                         <div class="intro__row">
                             <div class="intro__top">
-                                <h1 class="intro__title">Forget about dead batteries with QrCharge</h1>
-                                <h2 class="intro__subtitle">Rent a power bank when you need it, charge your device anywhere, anytime and return it easily</h2>
+                                <h1 data-lang="intro-title-top" class="intro__title">Forget about dead batteries with QrCharge</h1>
+                                <h2 data-lang="intro-subtitle-top" class="intro__subtitle">Rent a power bank when you need it, charge your device anywhere, anytime and return it
+                                    easily</h2>
                                 <div class="intro__market market">
                                     <a href="#" class="intro__btn market-btn">
                                         <img src="img/svgicons/apple-btn.svg" alt="apple-btn">
@@ -47,7 +52,7 @@
                                 </div>
                             </div>
                             <div class="intro__bottom">
-                                <h2>Stay connected at any time with this handy charger!</h2>
+                                <h2 data-lang="intro-bottom-title">Stay connected at any time with this handy charger!</h2>
                                 <div class="intro__qr">
                                     <img src="img/svgicons/qr.svg" alt="qr">
                                 </div>
@@ -58,14 +63,14 @@
                 <section class="rent section">
                     <div class="container">
                         <div class="rent__row">
-                            <h2 class="rent__title title">
+                            <h2 data-lang="rent-title" class="rent__title title">
                                 How to rent a power bank?
                             </h2>
                             <div class="rent__steps">
                                 <div class="rent__step">
                                     <div class="rent__count">1</div>
                                     <div class="rent__text">
-                                        <h3>Download the QrCharge app</h3>
+                                        <h3 data-lang="rent-text-title" data-index="0">Download the QrCharge app</h3>
                                         <div class="rent__market market">
                                             <a href="#" class="rent__btn market-btn">
                                                 <img src="img/svgicons/apple-btn.svg" alt="apple-btn">
@@ -79,27 +84,27 @@
                                 <div class="rent__step">
                                     <div class="rent__count">2</div>
                                     <div class="rent__text">
-                                        <h3>Scan the QR-code </h3>
-                                        <p>of the nearest terminal or enter its number into the app</p>
+                                        <h3 data-lang="rent-text-title" data-index="1">Scan the QR-code </h3>
+                                        <p data-lang="rent-text-text" data-index="0">of the nearest terminal or enter its number into the app</p>
                                     </div>
                                 </div>
                                 <div class="rent__step">
                                     <div class="rent__count">3</div>
                                     <div class="rent__text">
-                                        <h3>Charge</h3>
-                                        <p>your iPhone, Android or even iQos. Take the power bank with you and charge your device</p>
+                                        <h3 data-lang="rent-text-title" data-index="2">Charge</h3>
+                                        <p data-lang="rent-text-text" data-index="1">your iPhone, Android or even iQos. Take the power bank with you and charge your device</p>
                                     </div>
                                 </div>
                                 <div class="rent__step">
                                     <div class="rent__count">4</div>
                                     <div class="rent__text">
-                                        <h3>Return</h3>
-                                        <p>return the power bank by pressing the button in the app</p>
+                                        <h3 data-lang="rent-text-title" data-index="3">Return</h3>
+                                        <p data-lang="rent-text-text" data-index="2">return the power bank by pressing the button in the app</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="rent__tip">
-                                <p>Take the power bank and charge on-the-go</p>
+                                <p data-lang= 'rent-tip'>Take the power bank and charge on-the-go</p>
                                 <img src="img/svgicons/light-green.svg" alt="light-green">
                             </div>
                         </div>
@@ -147,7 +152,7 @@
                             <h2>Rent a powerbank for the price of a cup of coffee </h2>
                             <h3>Right place at the right time</h3>
                         </div>
-                        <picture><source srcset="img/index/cup/cup-bg.webp" type="image/webp"><img src="img/index/cup/cup-bg.png" alt="cup-bg" class="cup__bg"></picture>
+                        <picture><source srcset="img/index/cup/cup-bg.webp" type="image/webp"><img src="img/index/cup/cup-bg.webp" alt="cup-bg" class="cup__bg"></picture>
                     </div>
                 </section>
                 <section class="get with-map section">
@@ -157,31 +162,31 @@
                             <div class="get__cards cards with-map__content">
                                 <div class="get__card cards__card">
                                     <div class="cards__img">
-                                        <picture><source srcset="img/index/get/1.webp" type="image/webp"><img src="img/index/get/1.png" alt=""></picture>
+                                        <picture><source srcset="img/index/get/1.webp" type="image/webp"><img src="img/index/get/1.webp" alt=""></picture>
                                     </div>
                                     <h3 class="cards__title">Fitness centers</h3>
                                 </div>
                                 <div class="get__card cards__card">
                                     <div class="cards__img">
-                                        <picture><source srcset="img/index/get/2.webp" type="image/webp"><img src="img/index/get/2.png" alt=""></picture>
+                                        <picture><source srcset="img/index/get/2.webp" type="image/webp"><img src="img/index/get/2.webp" alt=""></picture>
                                     </div>
                                     <h3 class="cards__title">Stations</h3>
                                 </div>
                                 <div class="get__card cards__card">
                                     <div class="cards__img">
-                                        <picture><source srcset="img/index/get/3.webp" type="image/webp"><img src="img/index/get/3.png" alt=""></picture>
+                                        <picture><source srcset="img/index/get/3.webp" type="image/webp"><img src="img/index/get/3.webp" alt=""></picture>
                                     </div>
                                     <h3 class="cards__title">Malls</h3>
                                 </div>
                                 <div class="get__card cards__card">
                                     <div class="cards__img">
-                                        <picture><source srcset="img/index/get/4.webp" type="image/webp"><img src="img/index/get/4.png" alt=""></picture>
+                                        <picture><source srcset="img/index/get/4.webp" type="image/webp"><img src="img/index/get/4.webp" alt=""></picture>
                                     </div>
                                     <h3 class="cards__title">Cafes and restaurants</h3>
                                 </div>
                             </div>
                             <div class="get__map with-map__map">
-                                <picture><source srcset="img/index/with-map/map.webp" type="image/webp"><img src="img/index/with-map/map.png" alt="map"></picture>
+                                <picture><source srcset="img/index/with-map/map.webp" type="image/webp"><img src="img/index/with-map/map.webp" alt="map"></picture>
                             </div>
                         </div>
                     </div>
@@ -194,7 +199,7 @@
                         <div class="why__cards cards">
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <picture><source srcset="img/index/why/1.webp" type="image/webp"><img src="img/index/why/1.png" alt=""></picture>
+                                    <picture><source srcset="img/index/why/1.webp" type="image/webp"><img src="img/index/why/1.webp" alt=""></picture>
                                 </div>
                                 <h3 class="cards__title">Comfort</h3>
                                 <p class="cards__text">
@@ -204,7 +209,7 @@
                             </div>
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <picture><source srcset="img/index/why/2.webp" type="image/webp"><img src="img/index/why/2.png" alt=""></picture>
+                                    <picture><source srcset="img/index/why/2.webp" type="image/webp"><img src="img/index/why/2.webp" alt=""></picture>
                                 </div>
                                 <h3 class="cards__title">Easy accessibility</h3>
                                 <p class="cards__text">
@@ -214,7 +219,7 @@
                             </div>
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <picture><source srcset="img/index/why/3.webp" type="image/webp"><img src="img/index/why/3.png" alt=""></picture>
+                                    <picture><source srcset="img/index/why/3.webp" type="image/webp"><img src="img/index/why/3.webp" alt=""></picture>
                                 </div>
                                 <h3 class="cards__title">Community building</h3>
                                 <p class="cards__text">
@@ -223,7 +228,7 @@
                             </div>
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <picture><source srcset="img/index/why/4.webp" type="image/webp"><img src="img/index/why/4.png" alt=""></picture>
+                                    <picture><source srcset="img/index/why/4.webp" type="image/webp"><img src="img/index/why/4.webp" alt=""></picture>
                                 </div>
                                 <h3 class="cards__title">Cost-effectiveness</h3>
                                 <p class="cards__text">
@@ -233,7 +238,7 @@
                             </div>
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <picture><source srcset="img/index/why/5.webp" type="image/webp"><img src="img/index/why/5.png" alt=""></picture>
+                                    <picture><source srcset="img/index/why/5.webp" type="image/webp"><img src="img/index/why/5.webp" alt=""></picture>
                                 </div>
                                 <h3 class="cards__title">Increased device usage</h3>
                                 <p class="cards__text">
@@ -242,7 +247,7 @@
                             </div>
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <picture><source srcset="img/index/why/6.webp" type="image/webp"><img src="img/index/why/6.png" alt=""></picture>
+                                    <picture><source srcset="img/index/why/6.webp" type="image/webp"><img src="img/index/why/6.webp" alt=""></picture>
                                 </div>
                                 <h3 class="cards__title">Eco-friendly option</h3>
                                 <p class="cards__text">
@@ -259,11 +264,13 @@
                                 <h2 class="title">Install QrCharge for free in your establishments</h2>
                                 <p>Solve your customer’s battery problem! <br>
                                     Battery anxiety can completely disrupt the best of plans. With QrCharge your visitors have a smooth and easy way to charge their phones.</p>
-                                <a href="#" class="btn">Tell me more</a>
+                                <a href="./for-business.html" class="btn">Tell me more</a>
                             </div>
                             <div class="install__phones with-phone__phones">
-                                <div class="with-phone__phone-small"><picture><source srcset="img/index/with-phone/phone-bg.webp" type="image/webp"><img src="img/index/with-phone/phone-bg.png" alt="phone"></picture></div>
-                                <div class="with-phone__phone-big"><picture><source srcset="img/index/with-phone/phone-bg.webp" type="image/webp"><img src="img/index/with-phone/phone-bg.png" alt="phone"></picture></div>
+                                <div class="with-phone__phone-small"><picture><source srcset="img/index/with-phone/phone-bg.webp" type="image/webp"><img
+                                            src="img/index/with-phone/phone-bg.webp" alt="phone"></picture></div>
+                                <div class="with-phone__phone-big"><picture><source srcset="img/index/with-phone/phone-bg.webp" type="image/webp"><img
+                                            src="img/index/with-phone/phone-bg.webp" alt="phone"></picture></div>
                             </div>
                         </div>
                     </div>
@@ -272,7 +279,7 @@
                     <div class="container">
                         <div class="faq__row">
                             <h2 class="faq__title title">Have questions?</h2>
-                            <div class="faq__slides">
+                            <div class="faq__slides one">
                                 <div class="faq__slide">How to return a power bank?</div>
                                 <div class="faq__hiden">
                                     <ol>
@@ -338,7 +345,7 @@
                                 </div>
                             </div>
                             <div class="download__map with-map__map">
-                                <picture><source srcset="img/index/with-map/map.webp" type="image/webp"><img src="img/index/with-map/map.png" alt="map"></picture>
+                                <picture><source srcset="img/index/with-map/map.webp" type="image/webp"><img src="img/index/with-map/map.webp" alt="map"></picture>
                             </div>
                         </div>
                     </div>
@@ -361,14 +368,14 @@
                                     <a href="tel:+123 45 567 89 10">+123 45 567 89 10</a>
                                 </div>
                             </div>
-                            <form class="form__form" action="#">
-                                <input class="form__input input" type="text" name="name" placeholder="Enter your name">
-                                <input class="form__input input" type="phone" name="phone" placeholder="Enter your phone">
+                            <form class="form__form" action="#" oninput="actionForm(this);" method="post">
+                                <input id="userName" class="form__input input" type="text" name="name" placeholder="Enter your name">
+                                <input id="userPhone" class="form__input input" type="phone" name="phone" placeholder="Enter your phone">
                                 <label class="form__checkbox checkbox">
-                                    <input class="custom-checkbox" type="checkbox">
+                                    <input id="form__checkbox" class="custom-checkbox" type="checkbox">
                                     <p>I agree to QRCharge Terms and Conditions</p>
                                 </label>
-                                <button type='submit' class="btn">Send request</button>
+                                <button type='submit' class="form__button btn" disabled>Send request</button>
                             </form>
                         </div>
                     </div>
@@ -376,19 +383,65 @@
 
             </main>
             <footer class="footer">
-    <div class="container">
-        <div class="footer__row">
-            <a href="./index.html" class="footer__logo">
-                <img src="img/svgicons/logo.svg" alt="logo">
-            </a>
-            <div class="footer__copy">Copyright 2023 QRCharge</div>
-            <a href="#" class="footer__terms">Privacy Policy & Cookie </a>
+                <div class="container">
+                    <div class="footer__row">
+                        <a href="./index.html" class="footer__logo">
+                            <img src="img/svgicons/logo.svg" alt="logo">
+                        </a>
+                        <div class="footer__copy">Copyright 2023 QRCharge</div>
+                        <a href="#" class="footer__terms">Privacy Policy & Cookie </a>
+                    </div>
+                </div>
+            </footer>
         </div>
-    </div>
-</footer>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js?_v=20230824091510"></script>
-        <script src="js/app.min.js?_v=20230824091510"></script>
+        <script> 
+            function actionForm(form) {
+                // Проверка ввода и получение поля с именем
+                const formName = form.querySelector("#userName");
+                if (formName) {
+                    formName.onchange = function () {
+                    formName.value = formName.value.replace(/\d{1,}/gi, "");
+                    formName.value.length == 1 || formName.value.length < 3
+                        ? formName.classList.add("error")
+                        : formName.classList.remove("error");
+                    };
+                }
+                // Проверка ввода и получение поля с мылом
+                let formOwner = form.querySelector("#owner");
+                if (formOwner) {
+                    formOwner.onchange = function () {
+                    formOwner.value = formOwner.value.replace(/\d{1,}/gi, "");
+                    formOwner.value.length == 1 || formOwner.value.length < 2
+                        ? formOwner.classList.add("error")
+                        : formOwner.classList.remove("error");
+                    };
+                }
+                let formPhone = form.querySelector("#userPhone");
+
+                if (formPhone) {
+                    formPhone.oninput = function () {
+                        formPhone.value = formPhone.value.replace(/[^0-9]/g, '');;
+                    };
+                }
+                // Если в форме нет owner
+                if (!formOwner) {
+                    formOwner = 1;
+                }
+                // Согласине с политикой
+                let formCheckbox = form.querySelector("#form__checkbox");
+                // Проверяем заполнение всех полей
+                let currValue =
+                    formCheckbox.checked &&
+                    formName.value.length >= 3 &&
+                    formPhone.value.length > 0 &&
+                    (formOwner || formOwner.value.length >= 2);
+                // Ключаем и выключаем копку
+                let formBtn = form.querySelector(".form__button");
+                formBtn.disabled = !currValue;
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js?_v=20230824224612"></script>
+        <script src="js/app.min.js?_v=20230824224612"></script>
     </body>
 
 </html>
