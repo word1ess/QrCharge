@@ -235,7 +235,7 @@ h6 {
   max-width: fit-content;
   border-radius: 56px;
   font-weight: 700;
-  background: #fff;
+  background: transparent;
 }
 
 .section,
@@ -789,6 +789,9 @@ h6 {
 .why__cards {
   grid-template-columns: repeat(auto-fill, minmax(400px, 0.3333fr));
   grid-template-rows: repeat(2, 1fr);
+}
+.why__more {
+  display: none;
 }
 
 .install {
@@ -1582,6 +1585,14 @@ body {
   }
   .why__cards {
     grid-template-columns: 1fr;
+    margin: 0px 0px 16px;
+  }
+  .why__card.hidden {
+    display: none;
+  }
+  .why__more {
+    display: block;
+    margin: 0 auto;
   }
   .with-phone__phones {
     justify-content: center;
@@ -1594,6 +1605,27 @@ body {
     bottom: 0px;
     right: 0px;
   }
+  .rent__count {
+    flex: 0 0 56px;
+  }
+  .price__install {
+    max-height: fit-content;
+  }
+  .price__market {
+    flex-direction: column;
+  }
+  .price__market .price__btn {
+    flex: none;
+    height: 78px;
+  }
+  .get__card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .get__card .cards__img {
+    margin: 0px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .section,
@@ -1602,6 +1634,13 @@ body {
   }
   .price__info {
     flex-direction: column;
+  }
+  .price__market {
+    flex-direction: row;
+  }
+  .price__market .price__btn {
+    flex: 0 1 50%;
+    height: 60px;
   }
   .install__content {
     padding: 0px;
@@ -1618,6 +1657,16 @@ body {
     right: 0px;
   }
 }
+@media only screen and (max-width: 630px) {
+  .rent__tip img {
+    width: 190px;
+    height: 80px;
+    top: auto;
+    transform: translate(0, 0);
+    right: 20px;
+    bottom: -50px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .market {
     flex-direction: column;
@@ -1631,19 +1680,8 @@ body {
   .intro__bottom h2 {
     margin: 0px 0px 24px;
   }
-  .rent__tip img {
-    width: 190px;
-    height: 80px;
-    top: auto;
-    transform: translate(0, 0);
-    right: 20px;
-    bottom: -50px;
-  }
   .rent__text {
     flex: 0 1 auto;
-  }
-  .rent__count {
-    flex: 0 0 56px;
   }
   .install__row {
     flex-direction: column;
@@ -1663,6 +1701,31 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+  .price__market .price__btn {
+    flex: none;
+    height: 80px;
+  }
+  .cup__logo {
+    margin: 0px 0px 330px;
+  }
+  .cup__bg {
+    width: 550px;
+    top: 174px;
+    right: -215px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .why__more {
+    text-align: center;
+    max-width: 100%;
+  }
+  .price__market .price__btn {
+    width: 100%;
+    height: 64px;
+  }
+  .get__card {
+    gap: 6px;
   }
 }
 @media only screen and (max-width: 378px) {
@@ -1750,14 +1813,6 @@ body {
     flex: none;
     width: 100%;
     height: 64px;
-  }
-  .cup__logo {
-    margin: 0px 0px 330px;
-  }
-  .cup__bg {
-    width: 550px;
-    bottom: 174px;
-    right: -215px;
   }
   .cards,
   .with-map__row {
