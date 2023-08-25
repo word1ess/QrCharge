@@ -1322,7 +1322,7 @@ body {
     width: 100%;
     height: 100%;
   }
-  .why-fb__cards {
+  .why__cards {
     grid-template-columns: repeat(auto-fill, minmax(330px, 0.3333fr));
   }
 }
