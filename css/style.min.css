@@ -263,7 +263,7 @@ h6 {
 }
 .with-phone__light {
   position: absolute;
-  transform: translate(-25%, 0%);
+  transform: translate(50%, 0%);
   width: 1200px;
   z-index: 0;
 }
@@ -277,10 +277,12 @@ h6 {
   box-shadow: -40px 90px 100px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   border-radius: 32px 32px 0px 0px;
+  height: 450px;
 }
 .with-phone__phone-big {
   box-shadow: -40px 90px 100px 0px rgba(0, 0, 0, 0.25);
   position: relative;
+  height: 550px;
 }
 
 .form {
@@ -362,6 +364,16 @@ h6 {
 }
 .form__checkbox {
   margin: 16px 0px;
+}
+.form__input p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 144%; /* 23.04px */
+  color: #fff;
+  margin: 0px 0px 8px;
+}
+.form__input.textarea textarea {
+  min-height: 144px;
 }
 
 .checkbox {
@@ -455,6 +467,56 @@ h6 {
   z-index: 2;
 }
 
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0px 8px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #00b6ab;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #404040;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.522);
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  cursor: pointer;
+}
+.popup__row {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 570px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 40px;
+  transform: translate(-50%, -50%);
+}
+.popup__row h2 {
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 128%;
+  margin: 0px 0px 16px;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -527,8 +589,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1100px;
 }
 .intro__title {
   text-align: center;
@@ -538,8 +600,9 @@ h6 {
 }
 .intro__subtitle {
   text-align: center;
-  max-width: 780px;
+  max-width: 1090px;
   font-size: 24px;
+  color: #404040;
   font-weight: 400;
   line-height: 144%;
   margin: 0px 0px 32px;
@@ -587,6 +650,17 @@ h6 {
 }
 .rent__title {
   margin: 0px 0px 56px;
+}
+.rent__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.rent__img {
+  height: 500px;
+  background: #404040;
+  border-radius: 32px;
 }
 .rent__steps {
   display: flex;
@@ -654,6 +728,9 @@ h6 {
   top: 50%;
   right: -120px;
   transform: translate(0%, -50%);
+}
+.rent__phones .with-phone__phone-big {
+  order: 2;
 }
 
 .price__title {
@@ -811,13 +888,6 @@ h6 {
   margin: 0px 0px 40px;
   font-weight: 400;
 }
-.install__phones .with-phone__phone-small {
-  height: 450px;
-}
-.install__phones .with-phone__phone-big {
-  height: 550px;
-}
-
 .faq__title {
   text-align: center;
   margin: 0px 0px 56px;
@@ -917,32 +987,48 @@ h6 {
 }
 .intro-fb__title {
   margin: 0px 0px 16px;
+  font-size: 72px;
 }
 .intro-fb__top {
   margin-bottom: 48px;
 }
 .intro-fb-bottom {
   display: flex;
-  justify-content: flex-end;
   position: relative;
   background: #e9eff6;
-  max-width: 984px;
+  max-width: 1370px;
   width: 100%;
   height: 548px;
   gap: 12px;
   border-radius: 40px;
   margin: 0 auto;
+  padding: 0px 128px;
+  z-index: 2;
 }
 .intro-fb-bottom__img {
-  position: absolute;
-  top: 0px;
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+  order: 2;
+  max-height: 80%;
+  align-self: flex-end;
+}
+.intro-fb-bottom__img img {
+  position: relative;
+  bottom: 0px;
   left: 0px;
+  width: 100%;
+  height: 100%;
+  max-height: 80%;
+  object-fit: fill;
 }
 .intro-fb-bottom__text {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 460px;
+  max-width: 530px;
 }
 .intro-fb-bottom__text h2 {
   font-size: 40px;
@@ -1015,6 +1101,7 @@ h6 {
 }
 
 .rent-fb {
+  background: #7196c9;
   color: #fff;
   padding: 88px 0px 0px;
 }
@@ -1035,19 +1122,21 @@ h6 {
   margin-left: auto;
 }
 .rent-fb__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 600px;
 }
 .rent-fb__phones {
   order: -1;
 }
-.rent-fb__phones .with-phone__phone-small {
-  height: 450px;
-}
 .rent-fb__phones .with-phone__phone-big {
-  height: 550px;
   order: -1;
 }
 
+.form-fb {
+  background: #00b6ab;
+}
 .form-fb__title {
   font-size: 48px;
   line-height: 128%;
@@ -1073,6 +1162,75 @@ h6 {
   left: 0px;
   width: 100%;
   height: 100%;
+}
+
+.station-fb__title {
+  text-align: center;
+  margin: 0px 0px 16px;
+}
+.station-fb__subtitle {
+  text-align: center;
+  margin: 0px 0px 56px;
+  color: #404040;
+  font-size: 32px;
+}
+.station-fb__slide {
+  display: flex;
+  gap: 32px;
+  height: 100%;
+  height: 704px;
+}
+
+.slide-station-fb__img {
+  position: relative;
+  height: 100%;
+  flex: 0 0 668px;
+}
+.slide-station-fb__info {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  flex: 1 1 auto;
+  gap: 16px;
+  max-width: 600px;
+}
+.slide-station-fb__info h4 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 128%;
+}
+.slide-station-fb__info ul {
+  flex: 1 1 auto;
+}
+.slide-station-fb__info ul li {
+  position: relative;
+  font-size: 24px;
+  line-height: 144%;
+  padding: 0px 0px 0px 32px;
+}
+.slide-station-fb__info ul li span {
+  font-size: 24px;
+  line-height: 144%;
+  color: #404040;
+}
+.slide-station-fb__info ul li::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 14px;
+  left: 0px;
+  border-radius: 50%;
+  background: #000;
+}
+.slide-station-fb__suptitle {
+  font-size: 32px;
+  line-height: 128%;
+}
+.slide-station-fb__desc {
+  color: #404040;
+  font-size: 24px;
+  line-height: 144%;
 }
 
 .footer {
@@ -1152,6 +1310,9 @@ body {
   }
 }
 @media only screen and (max-width: 1440px) {
+  .rent__count {
+    flex: 0 0 56px;
+  }
   .container {
     max-width: 1244px;
   }
@@ -1251,21 +1412,21 @@ body {
   .cards__card {
     padding: 32px;
   }
-  .install__phones .with-phone__phone-small,
-  .install__phones .with-phone__phone-big {
+  .with-phone__phone-small,
+  .with-phone__phone-big {
     width: 279px;
     position: relative;
   }
-  .install__phones .with-phone__phone-small img,
-  .install__phones .with-phone__phone-big img {
+  .with-phone__phone-small img,
+  .with-phone__phone-big img {
     position: absolute;
     width: 100%;
     object-fit: cover;
   }
-  .install__phones .with-phone__phone-small {
+  .with-phone__phone-small {
     height: 400px;
   }
-  .install__phones .with-phone__phone-big {
+  .with-phone__phone-big {
     height: 515px;
   }
   .btn,
@@ -1328,6 +1489,36 @@ body {
   .why__cards {
     grid-template-columns: repeat(auto-fill, minmax(330px, 0.3333fr));
   }
+  .slide-station-fb {
+    height: 524px;
+  }
+  .slide-station-fb h4 {
+    font-size: 40px;
+  }
+  .slide-station-fb ul li {
+    font-size: 18px;
+    padding: 0px 0px 0px 24px;
+  }
+  .slide-station-fb ul li span {
+    font-size: 18px;
+  }
+  .slide-station-fb ul li::after {
+    top: 9px;
+  }
+  .slide-station-fb__suptitle {
+    font-size: 24px;
+  }
+  .slide-station-fb__desc {
+    font-size: 18px;
+  }
+  .slide-station-fb__img {
+    position: relative;
+    height: 100%;
+    flex: 0 0 400px;
+  }
+  .rent__img {
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 1280px) {
   .intro {
@@ -1389,24 +1580,24 @@ body {
     padding: 24px;
     border-radius: 32px;
   }
-  .install__phones .with-phone__phone-small,
-  .install__phones .with-phone__phone-big {
+  .with-phone__phone-small,
+  .with-phone__phone-big {
     width: 239px;
     position: relative;
   }
-  .install__phones .with-phone__phone-small img,
-  .install__phones .with-phone__phone-big img {
+  .with-phone__phone-small img,
+  .with-phone__phone-big img {
     position: absolute;
     width: 100%;
     object-fit: cover;
   }
-  .install__phones .with-phone__phone-small {
+  .with-phone__phone-small {
     height: 275px;
   }
-  .install__phones .with-phone__phone-big {
+  .with-phone__phone-big {
     height: 390px;
   }
-  .install__content {
+  .with-phone__info {
     padding: 0px 0px 80px;
   }
   .faq__row {
@@ -1497,6 +1688,31 @@ body {
   .get__cards {
     grid-template-columns: 1fr;
   }
+  .slide-station-fb {
+    height: 460px;
+  }
+  .slide-station-fb h4 {
+    font-size: 32px;
+  }
+  .slide-station-fb ul li {
+    font-size: 16px;
+    padding: 0px 0px 0px 16px;
+  }
+  .slide-station-fb ul li span {
+    font-size: 16px;
+  }
+  .slide-station-fb ul li::after {
+    top: 8px;
+  }
+  .slide-station-fb__suptitle {
+    font-size: 18px;
+  }
+  .slide-station-fb__desc {
+    font-size: 16px;
+  }
+  .slide-station-fb__img {
+    flex: 0 0 400px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .header__body {
@@ -1571,6 +1787,9 @@ body {
     width: 100%;
     text-align: center;
   }
+  .rent__row {
+    grid-template-columns: 1fr;
+  }
   .cup {
     padding: 80px 0px !important;
   }
@@ -1605,9 +1824,6 @@ body {
     bottom: 0px;
     right: 0px;
   }
-  .rent__count {
-    flex: 0 0 56px;
-  }
   .price__install {
     max-height: fit-content;
   }
@@ -1626,8 +1842,52 @@ body {
   .get__card .cards__img {
     margin: 0px;
   }
+  .offer__row {
+    display: flex;
+    gap: 0px;
+    flex-wrap: nowrap;
+  }
+  .offer__item.small {
+    flex: none;
+  }
+  .offer__item.big {
+    flex: none;
+  }
+  .offer__slider {
+    padding: 0px 0px 40px;
+  }
+  .with-phone__light {
+    width: 800px;
+  }
+  .intro-fb-bottom__img {
+    display: none;
+  }
+  .slide-station-fb__info {
+    padding: 20px 0px;
+  }
+  .station-fb__slider .swiper-button-next,
+  .station-fb__slider .swiper-button-prev {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .intro-fb__title {
+    text-align: center;
+    margin: 0px 0px 16px;
+  }
+  .slide-station-fb {
+    flex-direction: column;
+    height: auto;
+  }
+  .slide-station-fb__info {
+    max-width: fit-content;
+  }
+  .slide-station-fb .btn-bordered {
+    margin: 0 auto;
+  }
+  .with-phone__light {
+    transform: none;
+  }
   .section,
   .article {
     padding: 32px 0px;
@@ -1642,10 +1902,10 @@ body {
     flex: 0 1 50%;
     height: 60px;
   }
-  .install__content {
+  .with-phone__info {
     padding: 0px;
   }
-  .install__phones .with-phone__phone-small {
+  .with-phone__phone-small {
     height: 483px;
     top: -50px;
     border-radius: 32px;
@@ -1666,33 +1926,44 @@ body {
     right: 20px;
     bottom: -50px;
   }
+  .rent__left {
+    margin: 0px 0px 30px;
+  }
 }
 @media only screen and (max-width: 576px) {
+  .intro-fb-bottom__img {
+    display: none;
+  }
   .market {
     flex-direction: column;
   }
-  .intro__bottom {
+  .intro__bottom,
+  .intro-fb-bottom {
     padding: 40px 24px;
     height: fit-content;
     max-height: fit-content;
     border-radius: 24px;
   }
-  .intro__bottom h2 {
+  .intro__bottom h2,
+  .intro-fb-bottom h2 {
     margin: 0px 0px 24px;
   }
   .rent__text {
     flex: 0 1 auto;
   }
-  .install__row {
+  .with-phone__row {
     flex-direction: column;
   }
-  .install__phones {
+  .with-phone__phones {
     flex: none;
   }
-  .install__phones .with-phone__phone-small {
+  .with-phone__phone-small {
     top: 0px;
     height: 300px;
     width: 280px;
+  }
+  .rent-fb__phones {
+    order: 2;
   }
   .form__row {
     flex-direction: column;
@@ -1701,6 +1972,12 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+  .form__qr {
+    display: none;
+  }
+  .form-fb .form-fb__subtitle {
+    max-width: fit-content;
   }
   .price__market .price__btn {
     flex: none;
@@ -1713,6 +1990,10 @@ body {
     width: 550px;
     top: 174px;
     right: -215px;
+  }
+  .slide-station-fb .btn-bordered {
+    max-width: 100%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 430px) {

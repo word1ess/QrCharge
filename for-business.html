@@ -6,7 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="js/app.min.js"></script>
     <title>for-business</title>
 </head>
     <body>
@@ -40,9 +47,9 @@
                         <div class="intro__row">
                             <div class="intro__top intro-fb__top">
                                 <h1 data-lang="intro-title-top" class="intro-fb__title title">Get QrCharge station for free</h1>
-                                <h2 data-lang="intro-subtitle-top" class="intro__subtitle">Rent a power bank when you need it, charge your device anywhere, anytime and return it
-                                    easily</h2>
-                                <a data-lang="intro-btn-top" href="#" class="intro-fb__btn btn">Join us now</a>
+                                <h2 data-lang="intro-subtitle-top" class="intro__subtitle">It’s the simplest, quickest and most effective way for you to make your customers even
+                                    happier.</h2>
+                                <a data-lang="intro-btn-top" href="#" class="intro-fb__btn btn btn-popup">Join us now</a>
                             </div>
                             <div class="intro-fb-bottom">
                                 <div class="intro-fb-bottom__img">
@@ -53,7 +60,6 @@
                                     <div class="intro-fb__qr">
                                         <img src="img/svgicons/qr.svg" alt="qr">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -63,11 +69,14 @@
                     <div class="container">
                         <h2 class="offer__title">Offer your customers charge on-the-go</h2>
                         <h3 class="offer__subtitle">Under any floor or table</h3>
-                        <div class="offer__row">
-                            <div class="offer__item small"></div>
-                            <div class="offer__item big"><img src="img/fb/offer/2.png" alt=""></div>
-                            <div class="offer__item big"></div>
-                            <div class="offer__item small"></div>
+                        <div class="offer__slider swiper">
+                            <div class="offer__row swiper-wrapper">
+                                <div class="offer__item small swiper-slide"></div>
+                                <div class="offer__item big swiper-slide"><img src="img/fb/offer/2.png" alt=""></div>
+                                <div class="offer__item big swiper-slide"></div>
+                                <div class="offer__item small swiper-slide"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </section>
@@ -107,22 +116,6 @@
                         </div>
                     </div>
                 </section>
-                <section class="rent-fb with-phone">
-                    <div class="container">
-                        <div class="rent-fb__row with-phone__row">
-                            <div class="rent-fb__content with-phone__info">
-                                <p class="rent-fb__percent">+92%</p>
-                                <h2 class="title">Rent a powerbank for the price of a cup of coffee </h2>
-                                <img class="rent-fb__logo" src="img/svgicons/logo-white.svg" alt="">
-                            </div>
-                            <div class="rent-fb__phones with-phone__phones">
-                                <img src="img/svgicons/light-yellow.svg" alt="light-yellow" class="with-phone__light">
-                                <div class="with-phone__phone-small"><img src="img/index/with-phone/phone-bg.png" alt="phone"></div>
-                                <div class="with-phone__phone-big"><img src="img/index/with-phone/phone-bg.png" alt="phone"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <article class="form form-fb article">
                     <div class="container">
                         <div class="form__row">
@@ -137,9 +130,18 @@
                                 </div>
                             </div>
                             <form class="form__form" action="#" oninput="actionForm(this);" method="post">
-                                <input id="userName" class="form__input input" type="text" name="name" placeholder="Enter your name">
-                                <input id="userPhone" class="form__input input" type="phone" name="phone" placeholder="Enter your phone">
-                                <input id="owner" class="form__input input" type="text" name="owner" placeholder="Owner">
+                                <div class="form__input">
+                                    <p>Name</p>
+                                    <input id="userName" class="input" type="text" name="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form__input">
+                                    <p>Phone</p>
+                                    <input id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
+                                </div>
+                                <div class="form__input textarea">
+                                    <p>Comment (optional)</p>
+                                    <textarea id="comment" class="input" type="text" name="comment" placeholder="Enter additional information"></textarea>
+                                </div>
                                 <label class="form__checkbox checkbox">
                                     <input id="form__checkbox" class="custom-checkbox" type="checkbox">
                                     <p>I agree to QRCharge Terms and Conditions</p>
@@ -149,6 +151,71 @@
                         </div>
                     </div>
                 </article>
+                <section class="rent-fb with-phone">
+                    <div class="container">
+                        <div class="rent-fb__row with-phone__row">
+                            <div class="rent-fb__content with-phone__info">
+                                <!-- <p class="rent-fb__percent">+92%</p> -->
+                                <h2 class="title">Rent a powerbank for the price of a cup of coffee </h2>
+                                <img class="rent-fb__logo" src="img/svgicons/logo-white.svg" alt="">
+                            </div>
+                            <div class="rent-fb__phones with-phone__phones">
+                                <img src="img/svgicons/light-blue.svg" alt="light-blue" class="with-phone__light">
+                                <div class="with-phone__phone-big"><img src="img/index/with-phone/phone-bg.png" alt="phone"></div>
+                                <div class="with-phone__phone-small"><img src="img/index/with-phone/phone-bg.png" alt="phone"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="station-fb section">
+                    <div class="container">
+                        <h2 class="station-fb__title title">Our stations</h2>
+                        <h3 class="station-fb__subtitle">We will install the station for free</h3>
+                        <div class="station-fb__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="station-fb__slide swiper-slide slide-station-fb">
+                                    <div class="slide-station-fb__img">
+                                        <img src="img/fb/slider/1.png" alt="Small station">
+                                    </div>
+                                    <div class="slide-station-fb__info">
+                                        <p class="slide-station-fb__suptitle">6 slots</p>
+                                        <h4>Small station</h4>
+                                        <p class="slide-station-fb__desc">
+                                            Restaurants, bars, coffee shops, conference venues, and front desks are ideal locations for our compact
+                                            stations
+                                        </p>
+                                        <ul>
+                                            <li>Weight: <span>3.25KG</span></li>
+                                            <li>Dimensions: <span>260*243*240 mm</span></li>
+                                        </ul>
+                                        <a href="#" class="btn-bordered">I want a station</a>
+                                    </div>
+                                </div>
+                                <div class="station-fb__slide swiper-slide slide-station-fb">
+                                    <div class="slide-station-fb__img">
+                                        <img src="img/fb/slider/1.png" alt="Small station">
+                                    </div>
+                                    <div class="slide-station-fb__info">
+                                        <p class="slide-station-fb__suptitle">6 slots</p>
+                                        <h4>Small station</h4>
+                                        <p class="slide-station-fb__desc">
+                                            Restaurants, bars, coffee shops, conference venues, and front desks are ideal locations for our compact
+                                            stations
+                                        </p>
+                                        <ul>
+                                            <li>Weight: <span>3.25KG</span></li>
+                                            <li>Dimensions: <span>260*243*240 mm</span></li>
+                                        </ul>
+                                        <a href="#" class="btn-bordered">I want a station</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </section>
                 <article class="faq article">
                     <div class="container">
                         <div class="faq__row">
@@ -171,28 +238,34 @@
                                 </div>
 
                                 <div class="faq__slide">The station does not accept a power bank or the lease does not stop </div>
-                                <div class="faq__hiden">Verify that your cord connections are correctly inserted. Get in touch with our support team, and we'll promptly assist you.</div>
+                                <div class="faq__hiden">Verify that your cord connections are correctly inserted. Get in touch with our support team, and we'll promptly assist
+                                    you.</div>
                                 <div class="faq__slide">Time to fully charge my phone?</div>
-                                <div class="faq__hiden">Charging times may vary depending on your device type, battery size, and current battery charge level. However, most phones
+                                <div class="faq__hiden">Charging times may vary depending on your device type, battery size, and current battery charge level. However, most
+                                    phones
                                     should be fully charged within 1-2 hours, which is as fast as a regular wall charger.
                                 </div>
                                 <div class="faq__slide">QrCharge Station Is Full And I Can't Return My Power Bank, What Should I Do?</div>
-                                <div class="faq__hiden">If you are unable to return your power bank to a full QrСharge station, it is important to not leave it unattended as the
-                                    rental will still be considered active. To resolve this issue, you can use the QrCharge app to locate nearby stations with available slots. If
+                                <div class="faq__hiden">If you are unable to return your power bank to a full QrСharge station, it is important to not leave it unattended as
+                                    the
+                                    rental will still be considered active. To resolve this issue, you can use the QrCharge app to locate nearby stations with available slots.
+                                    If
                                     you are still unable to find a station or encounter difficulties with the return process, please contact our customer support team for
                                     assistance. Our team is always available to help ensure a smooth and convenient experience with QrCharge.
                                 </div>
 
                                 <div class="faq__slide">Do I Need To Have My Own Cables?</div>
                                 <div class="faq__hiden">You don't need to carry your cables when using QrCharge since our power banks come with integrated USB-C, Lightning, and
-                                    Micro-USB cables, making them compatible with a vast range of devices. This feature makes it easy for you to charge your gadgets without having
+                                    Micro-USB cables, making them compatible with a vast range of devices. This feature makes it easy for you to charge your gadgets without
+                                    having
                                     to bring your cables.
                                 </div>
 
                                 <div class="faq__slide">Is Using Upcharge Safe?</div>
                                 <div class="faq__hiden">
                                     Rest assured that using QrCharge is entirely safe, just like using any other power bank. We have collaborated with a reliable power bank
-                                    manufacturer to guarantee the highest quality and safety standards. Our power banks have undergone rigorous testing and are CE, RoHS, and FCC
+                                    manufacturer to guarantee the highest quality and safety standards. Our power banks have undergone rigorous testing and are CE, RoHS, and
+                                    FCC
                                     certified, ensuring compliance with the necessary health, safety, and environmental protection standards. At QrCharge, your safety and
                                     satisfaction are our top priorities, and we are dedicated to providing you with a secure and dependable power bank rental experience.
                                 </div>
@@ -243,8 +316,14 @@
                                 </div>
                             </div>
                             <form class="form__form" action="#" oninput="actionForm(this);" method="post">
-                                <input id="userName" class="form__input input" type="text" name="name" placeholder="Enter your name">
-                                <input id="userPhone" class="form__input input" type="phone" name="phone" placeholder="Enter your phone">
+                                <div class="form__input">
+                                    <p>Name</p>
+                                    <input id="userName" class="input" type="text" name="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form__input">
+                                    <p>Phone</p>
+                                    <input id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
+                                </div>
                                 <label class="form__checkbox checkbox">
                                     <input id="form__checkbox" class="custom-checkbox" type="checkbox">
                                     <p>I agree to QRCharge Terms and Conditions</p>
@@ -267,6 +346,30 @@
     </div>
 </footer>
         </div>
+        <div id="popup" class=" popup">
+            <div class="popup__row form">
+                <h2>Contact us</h3>
+                <form class="form__form " action="#" oninput="actionForm(this);" method="post">
+                    <div class="form__input">
+                        <p>Name</p>
+                        <input id="userName" class="input" type="text" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form__input">
+                        <p>Phone</p>
+                        <input id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="form__input textarea">
+                        <p>Comment (optional)</p>
+                        <textarea id="comment" class="input" type="text" name="comment" placeholder="Enter additional information"></textarea>
+                    </div>
+                    <label class="form__checkbox checkbox">
+                        <input id="form__checkbox" class="custom-checkbox" type="checkbox">
+                        <p>I agree to QRCharge Terms and Conditions</p>
+                    </label>
+                    <button type='submit' class="form__button btn" disabled>Send request</button>
+                </form>
+            </div>
+        </div>
         <script> 
             function actionForm(form) {
                 // Проверка ввода и получение поля с именем
@@ -279,16 +382,6 @@
                         : formName.classList.remove("error");
                     };
                 }
-                // Проверка ввода и получение поля с мылом
-                let formOwner = form.querySelector("#owner");
-                if (formOwner) {
-                    formOwner.onchange = function () {
-                    formOwner.value = formOwner.value.replace(/\d{1,}/gi, "");
-                    formOwner.value.length == 1 || formOwner.value.length < 2
-                        ? formOwner.classList.add("error")
-                        : formOwner.classList.remove("error");
-                    };
-                }
                 let formPhone = form.querySelector("#userPhone");
 
                 if (formPhone) {
@@ -296,25 +389,17 @@
                         formPhone.value = formPhone.value.replace(/[^0-9+]/g, '');;
                     };
                 }
-                // Если в форме нет owner
-                if (!formOwner) {
-                    formOwner = 1;
-                }
                 // Согласине с политикой
                 let formCheckbox = form.querySelector("#form__checkbox");
                 // Проверяем заполнение всех полей
                 let currValue =
                     formCheckbox.checked &&
-                    formName.value.length >= 3 &&
-                    formPhone.value.length > 0 &&
-                    formOwner.value.length >= 2;
+                    formName.value.length >= 3 && formPhone.value > 0
                 // Ключаем и выключаем копку
                 let formBtn = form.querySelector(".form__button");
                 formBtn.disabled = !currValue;
             }
         </script>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="js/app.min.js"></script>
     </body>
 
 </html>

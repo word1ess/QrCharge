@@ -6,7 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="js/app.min.js"></script>
     <title>Home</title>
 </head>
     <body>
@@ -51,10 +58,15 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="intro__bottom">
-                                <h2 data-lang="intro-bottom-title">Stay connected at any time with this handy charger!</h2>
-                                <div class="intro__qr">
-                                    <img src="img/svgicons/qr.svg" alt="qr">
+                            <div class="intro-fb-bottom">
+                                <div class="intro-fb-bottom__img">
+                                    <img src="img/fb/intro/bottom.png" alt="">
+                                </div>
+                                <div class="intro-fb-bottom__text">
+                                    <h2 data-lang="intro-bottom-title">Stay connected at any time with this handy charger!</h2>
+                                    <div class="intro-fb__qr">
+                                        <img src="img/svgicons/qr.svg" alt="qr">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -63,49 +75,54 @@
                 <section class="rent section">
                     <div class="container">
                         <div class="rent__row">
-                            <h2 data-lang="rent-title" class="rent__title title">
-                                How to rent a power bank?
-                            </h2>
-                            <div class="rent__steps">
-                                <div class="rent__step">
-                                    <div class="rent__count">1</div>
-                                    <div class="rent__text">
-                                        <h3 data-lang="rent-text-title" data-index="0">Download the QrCharge app</h3>
-                                        <div class="rent__market market">
-                                            <a href="#" class="rent__btn market-btn">
-                                                <img src="img/svgicons/apple-btn.svg" alt="apple-btn">
-                                            </a>
-                                            <a href="#" class="rent__btn market-btn">
-                                                <img src="img/svgicons/google-btn.svg" alt="google-btn">
-                                            </a>
+                            <div class="rent__left">
+                                <h2 data-lang="rent-title" class="rent__title title">
+                                    How to rent a power bank?
+                                </h2>
+                                <div class="rent__steps">
+                                    <div class="rent__step">
+                                        <div class="rent__count">1</div>
+                                        <div class="rent__text">
+                                            <h3 data-lang="rent-text-title" data-index="0">Download the QrCharge app</h3>
+                                            <div class="rent__market market">
+                                                <a href="#" class="rent__btn market-btn">
+                                                    <img src="img/svgicons/apple-btn.svg" alt="apple-btn">
+                                                </a>
+                                                <a href="#" class="rent__btn market-btn">
+                                                    <img src="img/svgicons/google-btn.svg" alt="google-btn">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rent__step">
+                                        <div class="rent__count">2</div>
+                                        <div class="rent__text">
+                                            <h3 data-lang="rent-text-title" data-index="1">Scan the QR-code </h3>
+                                            <p data-lang="rent-text-text" data-index="0">of the nearest terminal or enter its number into the app</p>
+                                        </div>
+                                    </div>
+                                    <div class="rent__step">
+                                        <div class="rent__count">3</div>
+                                        <div class="rent__text">
+                                            <h3 data-lang="rent-text-title" data-index="2">Charge</h3>
+                                            <p data-lang="rent-text-text" data-index="1">your iPhone, Android or even iQos. Take the power bank with you and charge your device</p>
+                                        </div>
+                                    </div>
+                                    <div class="rent__step">
+                                        <div class="rent__count">4</div>
+                                        <div class="rent__text">
+                                            <h3 data-lang="rent-text-title" data-index="3">Return</h3>
+                                            <p data-lang="rent-text-text" data-index="2">return the power bank by pressing the button in the app</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rent__step">
-                                    <div class="rent__count">2</div>
-                                    <div class="rent__text">
-                                        <h3 data-lang="rent-text-title" data-index="1">Scan the QR-code </h3>
-                                        <p data-lang="rent-text-text" data-index="0">of the nearest terminal or enter its number into the app</p>
-                                    </div>
-                                </div>
-                                <div class="rent__step">
-                                    <div class="rent__count">3</div>
-                                    <div class="rent__text">
-                                        <h3 data-lang="rent-text-title" data-index="2">Charge</h3>
-                                        <p data-lang="rent-text-text" data-index="1">your iPhone, Android or even iQos. Take the power bank with you and charge your device</p>
-                                    </div>
-                                </div>
-                                <div class="rent__step">
-                                    <div class="rent__count">4</div>
-                                    <div class="rent__text">
-                                        <h3 data-lang="rent-text-title" data-index="3">Return</h3>
-                                        <p data-lang="rent-text-text" data-index="2">return the power bank by pressing the button in the app</p>
-                                    </div>
+                                <div class="rent__tip">
+                                    <p data-lang= 'rent-tip'>Take the power bank and charge on-the-go</p>
+                                    <img src="img/svgicons/light-green.svg" alt="light-green">
                                 </div>
                             </div>
-                            <div class="rent__tip">
-                                <p data-lang= 'rent-tip'>Take the power bank and charge on-the-go</p>
-                                <img src="img/svgicons/light-green.svg" alt="light-green">
+                            <div class="rent__img">
+                                <img src="img/index/rent/bg.png" alt="bg">
                             </div>
                         </div>
                     </div>
@@ -368,8 +385,14 @@
                                 </div>
                             </div>
                             <form class="form__form" action="#" oninput="actionForm(this);" method="post">
-                                <input id="userName" class="form__input input" type="text" name="name" placeholder="Enter your name">
-                                <input id="userPhone" class="form__input input" type="phone" name="phone" placeholder="Enter your phone">
+                                <div class="form__input">
+                                    <p>Name</p>
+                                    <input id="userName" class="input" type="text" name="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form__input">
+                                    <p>Phone</p>
+                                    <input id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
+                                </div>
                                 <label class="form__checkbox checkbox">
                                     <input id="form__checkbox" class="custom-checkbox" type="checkbox">
                                     <p>I agree to QRCharge Terms and Conditions</p>
@@ -439,8 +462,6 @@
                 formBtn.disabled = !currValue;
             }
         </script>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="js/app.min.js"></script>
     </body>
 
 </html>
