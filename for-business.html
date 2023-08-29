@@ -2,45 +2,12 @@
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="css/style.min.css">
-    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="js/app.min.js"></script>
-    <title>for-business</title>
-</head>
+    @@include('html/head.html',{
+    "title":"for-business"
+    })
     <body>
         <div class="wrapper">
-            <header class="header">
-    <div class="container">
-        <div class="header__body">
-            <div class="header__logo">
-                <a href="./index.html">
-                    <img src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
-                </a>
-            </div>
-            <select id="language" name="language" id="language">
-                <option value="en">English</option>
-                <option value="fr">Français</option>
-            </select>
-            <div class="header__burger">
-                <span>
-
-                </span>
-            </div>
-            <nav class="header__menu">
-                <ul><li><a class="header__link" href="./for-business.html">For business</a></li></ul>
-            </nav>
-        </div>
-    </div>
-</header>
+            @@include('html/header.html',{})
             <main class="content">
                 <section class="intro-fb section">
                     <div class="container">
@@ -53,12 +20,12 @@
                             </div>
                             <div class="intro-fb-bottom">
                                 <div class="intro-fb-bottom__img">
-                                    <img src="img/fb/intro/bottom.png" alt="">
+                                    <img src="@img/fb/intro/bottom.png" alt="">
                                 </div>
                                 <div class="intro-fb-bottom__text">
                                     <h2 data-lang="intro-bottom-title">Stay connected at any time with this handy charger!</h2>
                                     <div class="intro-fb__qr">
-                                        <img src="img/svgicons/qr.svg" alt="qr">
+                                        <img src="@img/svgicons/qr.svg" alt="qr">
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +39,7 @@
                         <div class="offer__slider swiper">
                             <div class="offer__row swiper-wrapper">
                                 <div class="offer__item small swiper-slide"></div>
-                                <div class="offer__item big swiper-slide"><img src="img/fb/offer/2.png" alt=""></div>
+                                <div class="offer__item big swiper-slide"><img src="@img/fb/offer/2.png" alt=""></div>
                                 <div class="offer__item big swiper-slide"></div>
                                 <div class="offer__item small swiper-slide"></div>
                             </div>
@@ -88,7 +55,7 @@
                         <div class="why__cards why-fb__cards cards">
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <img src="img/index/why/1.png" alt="">
+                                    <img src="@img/index/why/1.png" alt="">
                                 </div>
                                 <h3 class="cards__title">The customer</h3>
                                 <p class="cards__text">
@@ -97,7 +64,7 @@
                             </div>
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <img src="img/index/why/2.png" alt="">
+                                    <img src="@img/index/why/2.png" alt="">
                                 </div>
                                 <h3 class="cards__title">The stuff</h3>
                                 <p class="cards__text">
@@ -106,7 +73,7 @@
                             </div>
                             <div class="why__card cards__card">
                                 <div class="cards__img">
-                                    <img src="img/index/why/3.png" alt="">
+                                    <img src="@img/index/why/3.png" alt="">
                                 </div>
                                 <h3 class="cards__title">The Venue</h3>
                                 <p class="cards__text">
@@ -125,8 +92,8 @@
                                     a charging station at your location and
                                     we'll get back to you with details.</h3>
                                 <div class="form__qr">
-                                    <img src="img/svgicons/qr.svg" alt="">
-                                    <img src="img/svgicons/light-yellow.svg" alt="" class="form__light">
+                                    <img src="@img/svgicons/qr.svg" alt="">
+                                    <img src="@img/svgicons/light-yellow.svg" alt="" class="form__light">
                                 </div>
                             </div>
                             <form class="form__form" action="#" oninput="actionForm(this);" method="post">
@@ -157,12 +124,12 @@
                             <div class="rent-fb__content with-phone__info">
                                 <!-- <p class="rent-fb__percent">+92%</p> -->
                                 <h2 class="title">Rent a powerbank for the price of a cup of coffee </h2>
-                                <img class="rent-fb__logo" src="img/svgicons/logo-white.svg" alt="">
+                                <img class="rent-fb__logo" src="@img/svgicons/logo-white.svg" alt="">
                             </div>
                             <div class="rent-fb__phones with-phone__phones">
-                                <img src="img/svgicons/light-blue.svg" alt="light-blue" class="with-phone__light">
-                                <div class="with-phone__phone-big"><img src="img/index/with-phone/phone-bg.png" alt="phone"></div>
-                                <div class="with-phone__phone-small"><img src="img/index/with-phone/phone-bg.png" alt="phone"></div>
+                                <img src="@img/svgicons/light-blue.svg" alt="light-blue" class="with-phone__light">
+                                <div class="with-phone__phone-big"><img src="@img/index/with-phone/big.png" alt="phone"></div>
+                                <div class="with-phone__phone-small"><img src="@img/index/with-phone/small.png" alt="phone"></div>
                             </div>
                         </div>
                     </div>
@@ -175,7 +142,7 @@
                             <div class="swiper-wrapper">
                                 <div class="station-fb__slide swiper-slide slide-station-fb">
                                     <div class="slide-station-fb__img">
-                                        <img src="img/fb/slider/1.png" alt="Small station">
+                                        <img src="@img/fb/slider/1.png" alt="Small station">
                                     </div>
                                     <div class="slide-station-fb__info">
                                         <p class="slide-station-fb__suptitle">6 slots</p>
@@ -193,7 +160,7 @@
                                 </div>
                                 <div class="station-fb__slide swiper-slide slide-station-fb">
                                     <div class="slide-station-fb__img">
-                                        <img src="img/fb/slider/1.png" alt="Small station">
+                                        <img src="@img/fb/slider/1.png" alt="Small station">
                                     </div>
                                     <div class="slide-station-fb__info">
                                         <p class="slide-station-fb__suptitle">6 slots</p>
@@ -281,18 +248,18 @@
                                 <h2 class="download__title title">Download QrCharge app from App Store or Google Play</h2>
                                 <div class="download__market market">
                                     <a href="#" class="download__btn market-btn">
-                                        <img src="img/svgicons/apple-btn.svg" alt="apple-btn">
+                                        <img src="@img/svgicons/apple-btn.svg" alt="apple-btn">
                                     </a>
                                     <a href="#" class="download__btn market-btn">
-                                        <img src="img/svgicons/google-btn.svg" alt="google-btn">
+                                        <img src="@img/svgicons/google-btn.svg" alt="google-btn">
                                     </a>
                                 </div>
                                 <div class="download__qr">
-                                    <img src="img/svgicons/qr.svg" alt="qr">
+                                    <img src="@img/svgicons/qr.svg" alt="qr">
                                 </div>
                             </div>
                             <div class="download__map with-map__map">
-                                <img src="img/index/with-map/map.png" alt="map">
+                                <img src="@img/index/with-map/map.png" alt="map">
                             </div>
                         </div>
                     </div>
@@ -302,16 +269,16 @@
                         <div class="form__row">
                             <div class="form__content">
                                 <div class="form__header">
-                                    <img src="img/svgicons/logo-small-white.svg" alt="logo-small">
+                                    <img src="@img/svgicons/logo-small-white.svg" alt="logo-small">
                                     <h2 class="form__title">Stay connected with QrCharge</h2>
                                 </div>
                                 <h3>Leave a request for connection</h3>
                                 <div class="form__social">
-                                    <img src="img/svgicons/mail.svg" alt="mail">
+                                    <img src="@img/svgicons/mail.svg" alt="mail">
                                     <a href="mailto:qrcharge@gmail.com">qrcharge@gmail.com</a>
                                 </div>
                                 <div class="form__social">
-                                    <img src="img/svgicons/phone.svg" alt="phone">
+                                    <img src="@img/svgicons/phone.svg" alt="phone">
                                     <a href="tel:+123 45 567 89 10">+123 45 567 89 10</a>
                                 </div>
                             </div>
@@ -334,17 +301,7 @@
                     </div>
                 </article>
             </main>
-            <footer class="footer">
-    <div class="container">
-        <div class="footer__row">
-            <a href="./index.html" class="footer__logo">
-                <img src="img/svgicons/logo.svg" alt="logo">
-            </a>
-            <div class="footer__copy">Copyright 2023 QRCharge</div>
-            <a href="#" class="footer__terms">Privacy Policy & Cookie </a>
-        </div>
-    </div>
-</footer>
+            @@include('html/footer.html',{})
         </div>
         <div id="popup" class=" popup">
             <div class="popup__row form">
