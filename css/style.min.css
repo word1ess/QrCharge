@@ -276,13 +276,16 @@ h6 {
 .with-phone__phone-small {
   box-shadow: -40px 90px 100px 0px rgba(0, 0, 0, 0.25);
   position: relative;
-  border-radius: 32px 32px 0px 0px;
+  border-radius: 64px 64px 0px 0px;
   height: 450px;
+  overflow: hidden;
 }
 .with-phone__phone-big {
   box-shadow: -40px 90px 100px 0px rgba(0, 0, 0, 0.25);
   position: relative;
+  border-radius: 64px 64px 0px 0px;
   height: 550px;
+  overflow: hidden;
 }
 
 .form {
