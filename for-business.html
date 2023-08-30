@@ -48,7 +48,7 @@
                 <div class="decstop">
                     <ul>
                         <li>
-                            <a class="header__link" href="./for-business.html">For business</a>
+                            <a data-lang="header-link" class="header__link" href="./for-business.html">For business</a>
                         </li>
                     </ul>
                 </div>
@@ -67,11 +67,11 @@
                     </div>
                     <ul class="header__links">
                         <li>
-                            <a class="header__link" href="./for-business.html">For business</a>
+                            <a data-lang="header-link" class="header__link" href="./for-business.html">For business</a>
                         </li>
                     </ul>
                     <img src="img/svgicons/logo-small-white.svg" alt="logo-small">
-                    <h2 class="form__title">Stay connected with QrCharge</h2>
+                    <h2 data-lang="form-title" class="form__title">Stay connected with QrCharge</h2>
                     <div class="header__social">
                         <div class="form__social">
                             <img src="img/svgicons/mail-green.svg" alt="mail">
@@ -83,14 +83,14 @@
                         </div>
                     </div>
                     <a href="#" class="header__btn btn">
-                        Download app
+                        <span data-lang="download">Download app</span>
                         <img src="img/svgicons/apple.svg" alt="apple">
                         <img src="img/svgicons/android.svg" alt="android">
                     </a>
                 </div>
             </nav>
             <a href="#" class="header__btn btn">
-                Download app
+                <span data-lang="download">Download app</span>
                 <img src="img/svgicons/apple.svg" alt="apple">
                 <img src="img/svgicons/android.svg" alt="android">
             </a>
@@ -123,8 +123,8 @@
                 </section>
                 <section class="offer section">
                     <div class="container">
-                        <h2 class="offer__title title">Offer your customers charge on-the-go</h2>
-                        <h3 class="offer__subtitle">Under any floor or table</h3>
+                        <h2 data-lang="offer-title" class="offer__title title">Offer your customers charge on-the-go</h2>
+                        <h3 data-lang="offer-subtitle" class="offer__subtitle">Under any floor or table</h3>
                         <div class="offer__slider swiper">
                             <div class="offer__row swiper-wrapper">
                                 <div class="offer__item small swiper-slide"><img src="img/fb/offer/1.png" alt=""></div>
@@ -138,7 +138,7 @@
                 </section>
                 <section class="why section">
                     <div class="container">
-                        <h2 class="why__title title">
+                        <h2 data-lang="why-title" class="why__title title">
                             The benefits of QrCharge
                         </h2>
                         <div class="why__cards why-fb__cards cards">
@@ -146,8 +146,8 @@
                                 <div class="cards__img">
                                     <img src="img/index/why/1.png" alt="">
                                 </div>
-                                <h3 class="cards__title">The customer</h3>
-                                <p class="cards__text">
+                                <h3 data-lang="why-card-title" class="cards__title">The customer</h3>
+                                <p data-lang="why-card-text" class="cards__text">
                                     Can charge phone without having to leave it somewhere
                                 </p>
                             </div>
@@ -155,8 +155,8 @@
                                 <div class="cards__img">
                                     <img src="img/index/why/2.png" alt="">
                                 </div>
-                                <h3 class="cards__title">The stuff</h3>
-                                <p class="cards__text">
+                                <h3 data-lang="why-card-title" class="cards__title">The stuff</h3>
+                                <p data-lang="why-card-text" class="cards__text">
                                     Can focus on their tasks and refer to the station for charging needs
                                 </p>
                             </div>
@@ -164,8 +164,8 @@
                                 <div class="cards__img">
                                     <img src="img/index/why/3.png" alt="">
                                 </div>
-                                <h3 class="cards__title">The Venue</h3>
-                                <p class="cards__text">
+                                <h3 data-lang="why-card-title" class="cards__title">The Venue</h3>
+                                <p data-lang="why-card-text" class="cards__text">
                                     Is being presented in our app with thousand of weekly users
                                 </p>
                             </div>
@@ -176,10 +176,9 @@
                     <div class="container">
                         <div class="form__row">
                             <div class="form__content">
-                                <h2 class="form-fb__title title">Get a power boost for your people today</h2>
-                                <h3 class="form-fb__subtitle">Complete an application to install
-                                    a charging station at your location and
-                                    we'll get back to you with details.</h3>
+                                <h2 data-lang="form-fb-title" class="form-fb__title title">Get a power boost for your people today</h2>
+                                <h3 data-lang="form-fb-subtitle" class="form-fb__subtitle">Complete an application to install a charging station at your location and we'll get back
+                                    to you with details.</h3>
                                 <div class="form__qr">
                                     <img src="img/svgicons/qr.svg" alt="">
                                     <img src="img/svgicons/light-yellow.svg" alt="" class="form__light">
@@ -187,22 +186,23 @@
                             </div>
                             <form class="form__form" action="#" oninput="actionForm(this);" method="post">
                                 <div class="form__input">
-                                    <p>Name</p>
-                                    <input id="userName" class="input" type="text" name="name" placeholder="Enter your name">
+                                    <p data-lang="form-name">Name</p>
+                                    <input data-lang="input" id="userName" class="input" type="text" name="name" placeholder="Enter your name">
                                 </div>
                                 <div class="form__input">
-                                    <p>Phone</p>
-                                    <input id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
+                                    <p data-lang="form-phone">Phone</p>
+                                    <input data-lang="input" id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
                                 </div>
                                 <div class="form__input textarea">
-                                    <p>Comment (optional)</p>
-                                    <textarea id="comment" class="input" type="text" name="comment" placeholder="Enter additional information"></textarea>
+                                    <p data-lang="form-comment">Comment (optional)</p>
+                                    <textarea data-lang="input" id="comment" class="input" type="text" name="comment" placeholder="Enter additional information"></textarea>
                                 </div>
                                 <label class="form__checkbox checkbox">
                                     <input id="form__checkbox" class="custom-checkbox" type="checkbox">
-                                    <p>I agree to QRCharge Terms and Conditions</p>
+                                    <p data-lang="form-checkbox">I agree to QRCharge Terms and Conditions</p>
                                 </label>
-                                <button type='submit' class="form__button btn" disabled>Get for frees</button>
+                                <button data-lang="send-requset" type='submit' class="form__button btn" disabled>Send request</button>
+
                             </form>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                         <div class="rent-fb__row with-phone__row">
                             <div class="rent-fb__content with-phone__info">
                                 <!-- <p class="rent-fb__percent">+92%</p> -->
-                                <h2 class="title">Increase your awareness and enable our users to explore your location, which could lead to new clients.</h2>
+                                <h2 data-lang="rent-title" class="title">Increase your awareness and enable our users to explore your location, which could lead to new clients.</h2>
                                 <img class="rent-fb__logo" src="img/svgicons/logo-white.svg" alt="">
                             </div>
                             <div class="rent-fb__phones with-phone__phones">
@@ -225,8 +225,8 @@
                 </section>
                 <section class="station-fb">
                     <div class="container">
-                        <h2 class="station-fb__title title">Our stations</h2>
-                        <h3 class="station-fb__subtitle">We will install the station for free</h3>
+                        <h2 data-lang="station-fb-title" class="station-fb__title title">Our stations</h2>
+                        <h3 data-lang="station-fb-subtitle" class="station-fb__subtitle">We will install the station for free</h3>
                         <div class="station-fb__slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="station-fb__slide swiper-slide slide-station-fb">
@@ -234,17 +234,17 @@
                                         <img src="img/slider/1.png" alt="Small station">
                                     </div>
                                     <div class="slide-station-fb__info">
-                                        <p class="slide-station-fb__suptitle">6 slots</p>
-                                        <h4>Small station</h4>
-                                        <p class="slide-station-fb__desc">
+                                        <p data-lang="slide-station-fb-suptitle" class="slide-station-fb__suptitle">6 slots</p>
+                                        <h4 data-lang="slide-station-fb-title">Small station</h4>
+                                        <p data-lang="slide-station-fb-desc" class="slide-station-fb__desc">
                                             Restaurants, bars, coffee shops, conference venues, and front desks are ideal locations for our compact
                                             stations
                                         </p>
                                         <ul>
-                                            <li>Weight: <span>3.25KG</span></li>
-                                            <li>Dimensions: <span>260*243*240 mm</span></li>
+                                            <li><span data-lang="slide-station-fb-list">Weight: </span><span>3.25KG</span></li>
+                                            <li><span data-lang="slide-station-fb-list">Dimensions: </span><span>260*243*240 mm</span></li>
                                         </ul>
-                                        <a href="#" class="btn-bordered btn-popup">I want a station</a>
+                                        <a href="#" data-lang="slide-station-fb-btn" class="btn-bordered btn-popup">I want a station</a>
                                     </div>
                                 </div>
                                 <div class="station-fb__slide swiper-slide slide-station-fb">
@@ -294,7 +294,7 @@
                     <div class="container">
                         <div class="download__row with-map__row">
                             <div class="download__info with-map__content">
-                                <h2 class="download__title title">Download QrCharge app from App Store or Google Play</h2>
+                                <h2 data-lang="download-title" class="download__title title">Download QrCharge app from App Store or Google Play</h2>
                                 <div class="download__market market">
                                     <a href="#" class="download__btn market-btn">
                                         <img src="img/svgicons/apple-btn.svg" alt="apple-btn">
@@ -319,9 +319,9 @@
                             <div class="form__content">
                                 <div class="form__header">
                                     <img src="img/svgicons/logo-small-white.svg" alt="logo-small">
-                                    <h2 class="form__title">Stay connected with QrCharge</h2>
+                                    <h2 data-lang="form-title" class="form__title">Stay connected with QrCharge</h2>
                                 </div>
-                                <h3>Leave a request for connection</h3>
+                                <h3 data-lang="form-subtitle">Leave a request for connection</h3>
                                 <div class="form__social">
                                     <img src="img/svgicons/mail.svg" alt="mail">
                                     <a href="mailto:qrcharge@gmail.com">qrcharge@gmail.com</a>
@@ -333,18 +333,18 @@
                             </div>
                             <form class="form__form" action="#" oninput="actionForm(this);" method="post">
                                 <div class="form__input">
-                                    <p>Name</p>
-                                    <input id="userName" class="input" type="text" name="name" placeholder="Enter your name">
+                                    <p data-lang="form-name">Name</p>
+                                    <input data-lang="input" id="userName" class="input" type="text" name="name" placeholder="Enter your name">
                                 </div>
                                 <div class="form__input">
-                                    <p>Phone</p>
-                                    <input id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
+                                    <p data-lang="form-phone">Phone</p>
+                                    <input data-lang="input" id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
                                 </div>
                                 <label class="form__checkbox checkbox">
                                     <input id="form__checkbox" class="custom-checkbox" type="checkbox">
-                                    <p>I agree to QRCharge Terms and Conditions</p>
+                                    <p data-lang="form-checkbox">I agree to QRCharge Terms and Conditions</p>
                                 </label>
-                                <button type='submit' class="form__button btn" disabled>Send request</button>
+                                <button data-lang="get-for-free" type='submit' class="form__button btn" disabled>Get for free</button>
                             </form>
                         </div>
                     </div>
@@ -356,33 +356,33 @@
             <a href="./index.html" class="footer__logo">
                 <img src="img/svgicons/logo.svg" alt="logo">
             </a>
-            <div class="footer__copy">Copyright 2023 QRCharge</div>
-            <a href="#" class="footer__terms">Privacy Policy & Cookie </a>
+            <div data-lang="footer-copy" class="footer__copy">Copyright 2023 QRCharge</div>
+            <a data-lang="footer-privacy" href="#" class="footer__terms">Privacy Policy & Cookie </a>
         </div>
     </div>
 </footer>
         </div>
         <div id="popup" class="popup">
             <div class="popup__row form">
-                <header class="popup__header"><h2>Contact us</h2><img class="popup__close" src="img/svgicons/close.svg" alt=""></header>
+                <header class="popup__header"><h2 data-lang="contact-us">Contact us</h2><img class="popup__close" src="img/svgicons/close.svg" alt=""></header>
                 <form class="form__form popup__form" action="#" oninput="actionForm(this);" method="post">
                     <div class="form__input">
-                        <p>Name</p>
-                        <input id="userName" class="input" type="text" name="name" placeholder="Enter your name">
+                        <p data-lang="form-name">Name</p>
+                        <input data-lang="input" id="userName" class="input" type="text" name="name" placeholder="Enter your name">
                     </div>
                     <div class="form__input">
-                        <p>Phone</p>
-                        <input id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
+                        <p data-lang="form-phone">Phone</p>
+                        <input data-lang="input" id="userPhone" class="input" type="phone" name="phone" placeholder="Enter your phone">
                     </div>
                     <div class="form__input textarea">
-                        <p>Comment (optional)</p>
-                        <textarea id="comment" class="input" type="text" name="comment" placeholder="Enter additional information"></textarea>
+                        <p data-lang="form-comment">Comment (optional)</p>
+                        <textarea data-lang="input" id="comment" class="input" type="text" name="comment" placeholder="Enter additional information"></textarea>
                     </div>
                     <label class="form__checkbox checkbox">
-                        <input id="form__checkbox" class="custom-checkbox" type="checkbox">
-                        <p>I agree to QRCharge Terms and Conditions</p>
+                        <input data-lang="input" id="form__checkbox" class="custom-checkbox" type="checkbox">
+                        <p data-lang="form-checkbox">I agree to QRCharge Terms and Conditions</p>
                     </label>
-                    <button type='submit' class="form__button btn" disabled>Send request</button>
+                    <button data-lang="get-for-free" type='submit' class="form__button btn" disabled>Get for free</button>
                 </form>
             </div>
         </div>

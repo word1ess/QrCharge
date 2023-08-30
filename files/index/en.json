@@ -13,5 +13,96 @@
         "of the nearest terminal or enter its number into the app",
         "your iPhone, Android or even iQos. Take the power bank with you and charge your device",
         "return the power bank by pressing the button in the app"
-    ]
+    ],
+    
+    "rent-tip" : "Take the power bank and charge on-the-go",
+    "price-title" : "Affordable price",
+    "price-free": "First Hour Free",
+    "price-cost": [
+        "from €4 / 24 hours",
+        "from €2 / hour"
+    ],
+    "price-install": "Instal the app and rent a power bank",
+    "price-list": [
+        "The current rates are listed on the terminals and in the application",
+        "The money is withdrawn from your debit or credit card before the rental begins"
+    ],
+    "cup-title":"Rent a powerbank for the price of a cup of coffee ",
+    "cup-subtitle": "Right place at the right time",
+    "get-title": "Get a powerbank all over the city",
+
+    "get-card-title": [
+        "Fitness centers",
+        "Stations",
+        "Malls",
+        "Cafes and restaurants"
+    ],
+
+    "why-title": "Why QrCharge?",
+
+    "why-card-title":[
+        "Comfort",
+        "Easy accessibility",
+        "Community building",
+        "Cost-effectiveness",
+        "Increased device usage",
+        "Eco-friendly option"
+    ],
+
+    "why-card-text":[
+        "Shared powerbanks offer the convenience of charging device on the go, eliminating the need to search for an outlet or carry a charger. This is convenient when traveling or in places where power outlets are limited.",
+        "Shared power banks are strategically placed in convenient locations like airports and public transportation hubs, ensuring easy access whenever you require them.",
+        "Shared power banks encourage interaction and resource sharing among users, fostering a sense of community",
+        "Opting for shared power banks can be a more cost-effective choice compared to buying a personal power bank, especially if you don't frequently use it.",
+        "With shared power banks, people can stay connected and maximize their device usage without worrying about running out of power.",
+        "The money is withdrawn from your debit or credit card before the rental begins "
+    ],
+    "show-more":"Show more",
+    "install-title": "Install QrCharge for free in your establishments",
+    "install-text": "Solve your customer’s battery problem! Battery anxiety can completely disrupt the best of plans. With QrCharge your visitors have a smooth and easy way to charge their phones.",
+    "tell-more": "Tell me more",
+    "download-title": "Download QrCharge app from App Store or Google Play",
+    "form-title": "Stay connected with QrCharge",
+    "form-subtitle": "Leave a request for connection",
+    "form-checkbox": "I agree to QRCharge Terms and Conditions",
+    "form-name": "Name",
+    "form-phone": "Phone",
+    "form-comment": "Comment (optional)",
+    "get-for-free": "Get for free",
+    "faq-title": "FAQ pour les utilisateurs",
+    "faq-list": [
+        "Locate the closest point on the map provided by the application.",
+        "Follow the route to reach the station.",
+        "Insert the power bank into an available slot on the station."
+    ],
+    "faq-question": [
+        "How to return a power bank?",
+        "What devices can be charged?",
+        "The station does not accept a power bank or the lease does not stop ",
+        "Time to fully charge my phone?",
+        "QrCharge Station Is Full And I Can't Return My Power Bank, What Should I Do?",
+        "Do I Need To Have My Own Cables?",
+        "Is Using Upcharge Safe?"
+    ],
+    "faq-answer": [
+        "If the rental process does not halt within 30 seconds, verify your internet connectivity and refresh the page. If the issue persists, seek assistance from support.",
+        "The application is compatible with Apple iPhones from the iPhone 5 onwards that have a lightning cable, as well as most Android phones that use micro-USB charging plugs or a USB Type-C cable.",
+        "Verify that your cord connections are correctly inserted. Get in touch with our support team, and we'll promptly assist you.",
+        "Charging times may vary depending on your device type, battery size, and current battery charge level. However, most phones should be fully charged within 1-2 hours, which is as fast as a regular wall charger.",
+        "If you are unable to return your power bank to a full QrСharge station, it is important to not leave it unattended as the rental will still be considered active. To resolve this issue, you can use the QrCharge app to locate nearby stations with available slots. If you are still unable to find a station or encounter difficulties with the return process, please contact our customer support team for assistance. Our team is always available to help ensure a smooth and convenient experience with QrCharge.",
+        "You don't need to carry your cables when using QrCharge since our power banks come with integrated USB-C, Lightning, and Micro-USB cables, making them compatible with a vast range of devices. This feature makes it easy for you to charge your gadgets without having to bring your cables.",
+        "Rest assured that using QrCharge is entirely safe, just like using any other power bank. We have collaborated with a reliable power bank manufacturer to guarantee the highest quality and safety standards. Our power banks have undergone rigorous testing and are CE, RoHS, and FCC certified, ensuring compliance with the necessary health, safety, and environmental protection standards. At QrCharge, your safety and satisfaction are our top priorities, and we are dedicated to providing you with a secure and dependable power bank rental experience."
+    ],
+    "show-more-qustion": "Show more questions",
+    "footer-copy": "Copyright 2023 QRCharge",
+    "footer-privacy" : "Privacy Policy & Cookie",
+    "header-link": [
+        "For business"
+    ],
+    "download": "Download app",
+    "input":{
+        "phone": "Enter your phone",
+        "name": "Enter your name",
+        "comment": "Enter additional information"
+    }
 }

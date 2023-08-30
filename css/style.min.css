@@ -346,21 +346,8 @@ h6 {
 .form__form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-.form__form .form__input p {
-  font-size: 16px;
-}
-.form__form .input, .form__form .checkbox p {
-  font-size: 16px;
-}
-.form__form .checkbox p::after, .form__form .checkbox p::before {
-  width: 28px;
-  height: 28px;
-}
-.form__form .form__button {
-  padding: 14px 35px;
-  font-size: 14px;
+  gap: 24px;
+  flex: 1 1 auto;
 }
 .form__qr {
   position: relative;
@@ -531,6 +518,25 @@ h6 {
   font-size: 30px;
   font-weight: 300;
   line-height: 128%;
+}
+.popup__row .form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.popup__row .form__input p {
+  font-size: 16px;
+}
+.popup__row .input, .popup__row .checkbox p {
+  font-size: 16px;
+}
+.popup__row .checkbox p::after, .popup__row .checkbox p::before {
+  width: 28px;
+  height: 28px;
+}
+.popup__row .form__button {
+  padding: 14px 35px;
+  font-size: 14px;
 }
 .popup__header {
   display: flex;

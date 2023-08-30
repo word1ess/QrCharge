@@ -2,5 +2,52 @@
     "intro-title-top": "Get QrCharge station for free",
     "intro-subtitle-top": "Rent a power bank when you need it, charge your device anywhere, anytime and return it easily",
     "intro-btn-top": "Join us now",
-    "intro-bottom-title": "Stay connected at any time with this handy charger!"
+    "intro-bottom-title": "Stay connected at any time with this handy charger!",
+    "offer-title": "Offer your customers charge on-the-go",
+    "offer-subtitle": "Under any floor or table",
+    "why-title": "The benefits of QrCharge",
+    "why-card-title":[
+        "The customer",
+        "The stuff",
+        "The Venue"
+    ],
+    "why-card-text":[
+        "Can charge phone without having to leave it somewhere",
+        "Can focus on their tasks and refer to the station for charging needs",
+        "Is being presented in our app with thousand of weekly users"
+    ],
+    "form-fb-title": "Get a power boost for your people today",
+    "form-fb-subtitle": "Complete an application to install a charging station at your location and we'll get back to you with details.",
+    "form-name": "Name",
+    "form-phone": "Phone",
+    "form-comment": "Comment (optional)",
+    "form-checkbox": "I agree to QRCharge Terms and Conditions",
+    "get-for-free": "Get for free",
+    "send-requset": "Send request",
+    "rent-title": "Increase your awareness and enable our users to explore your location, which could lead to new clients",
+    "station-fb-title": "Our stations",
+    "station-fb-subtitle": "We will install the station for free",
+    "slide-station-fb-suptitle": "6 slots",
+    "slide-station-fb-title": "Small station",
+    "slide-station-fb-desc": "Restaurants, bars, coffee shops, conference venues, and front desks are ideal locations for our compact stations",
+    "slide-station-fb-list": [
+        "Weight:", 
+        "Dimensions:"
+    ],
+    "slide-station-fb-btn": "I want a station",
+    "download-title": "Download QrCharge app from App Store or Google Play",
+    "form-title": "Stay connected with QrCharge",
+    "form-subtitle": "Leave a request for connection",
+    "contact-us": "Contact us",
+    "footer-copy": "Copyright 2023 QRCharge",
+    "footer-privacy" : "Privacy Policy & Cookie",
+    "header-link": [
+        "For business"
+    ],
+    "download": "Download app",
+    "input":{
+        "phone": "Enter your phone1",
+        "name": "Enter your name1",
+        "comment": "Enter additional information1"
+    }
 }

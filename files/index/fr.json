@@ -13,5 +13,83 @@
         "du terminal le plus proche, ou bien entrez le numéro du QR-code dans l’application",
         "votre iPhone, Android ou même iQos. Emportez la banque d’alimentation et rechargez votre appareil.",
         "Appuyez sur un bouton pour effectuer le retour à la station de votre choix"
+    ],
+    "rent-tip" : "Emportez la banque d’alimentation et chargez votre appareil à la volée",
+    "price-title" : "Prix abordable",
+    "price-free": "Première heure gratuite",
+    "price-cost": [
+        "24 heures de location / à partir de 4 €",
+        "1 heure de location / à partir de 2 €"
+    ],
+    "price-install": "Installez l’application et louez la batterie externe",
+    "price-list": [
+        "Les tarifs sont indiqués sur les terminaux et dans l’application.",
+        "L’argent est prélevé sur votre carte de débit ou crédit avant le début de la période de location."
+    ],
+    "cup-title":"Louez la batterie externe pour le prix d’un café. Au bon endroit et à la bonne heure.",
+    "cup-subtitle": "Au bon endroit au bon moment",
+    "get-title": "Où trouver une batterie externe",
+
+    "get-card-title": [
+        "Dans les centres de fitness",
+        "Aux arrêts et stations de transport public",
+        "Dans les supermarchés",
+        "Dans les cafés et restaurants"
+    ],
+
+    "why-title": "Pourquoi QRCharge?",
+
+    "why-card-title":[
+        "Confort",
+        "Accès facile",
+        "Vie en communauté",
+        "Rentabilité",
+        "Utilisation prolongée de vos appareils électroniques",
+        "Option écologique"
+    ],
+
+    "why-card-text":[
+        "Les banques d’alimentation offrent l’avantage de charger votre appareil à la volée, supprimant la nécessité de chercher une prise électrique ou d’avoir un chargeur sur soi. C’est particulièrement intéressant lors d’un voyage ou lorsque vous vous trouvez à des endroits manquants de prises électriques. ",
+        "Les banques d’alimentation partagées se trouvent dans les endroits stratégiques, tels que dans les aéroports, et arrêts et stations de transport public, ce qui permet de les avoir à votre disposition quand vous en avez besoin.",
+        "Les banques d’alimentation partagés encouragent l’interaction et le partage des ressources entre les utilisateurs, ce qui renforce le sens de la communauté.",
+        "Les banques d’alimentation partagées peuvent représenter un choix plus rentable, comparé à l’achat d’une banque d’alimentation personnelle, surtout si vous ne l’utilisez pas souvent",
+        "Avec les banques d’alimentation partagées, les gens peuvent rester connectés et maximiser le temps d’utilisation de leurs appareils sans se soucier du déchargement de ces derniers",
+        "En réduisant l’utilisation des batteries et des chargeurs individuels, les banques d’alimentation créent une approche plus écologique.  "
+    ],
+    "show-more":"Montrer plus",
+    "install-title": "Nous installerons la station QrCharge dans votre établissement gratuitement",
+    "install-text": "Aidez vos clients à résoudre leurs problèmes de batteries ! L’anxiété quant à une batterie déchargée peut complètement perturber les projets les mieux organisés. Faites en sorte que vos visiteurs ne s’en inquiètent plus jamais grâce à la station QrCharge station.",
+    "tell-more": "Dis m'en plus",
+    "download-title": "Telechargez l’application QrCharge dans l’App Store ou dans le Google Play Store",
+    "form-title": "Restez connecté avec QrCharge",
+    "form-subtitle": "Laissez une demande de contact",
+    "form-checkbox": "J’accepte les termes et les conditions de",
+    "get-for-free": "Envoyer une demande",
+    "faq-title": "FAQ pour les utilisateurs",
+    "form-name": "Nom",
+    "form-phone": "Téléphone",
+    "form-comment": "Message (Obligatoire)",
+    "faq-list": [
+        "Localiser le point le plus proche sur la carte via l’application",
+        "Suivre l’itinéraire proposé pour arriver au distributeur",
+        "Insérer la banque d’alimentation dans l’emplacement disponible sur le distributeur"
+    ],
+    "faq-question": [
+        "Comment restituer la banque d’alimentation ?",
+        "Quels appareils peuvent être chargés ?",
+        "Le distributeur ne reprend pas la banque d’alimentation ? La location ne prend pas fin ?",
+        "Quelle est la durée de recharge de mon téléphone ? ",
+        "Je souhaite restituer la banque d’alimentation mais il n’y a plus de place sur le distributeur. Que dois-je faire ? ",
+        "Ai-je besoin d’avoir mes propres câbles ? ",
+        "L’utilisation de l'équipement QrCharge est-il sécurisé ? "
+    ],
+    "faq-answer": [
+        "Si la procédure de location ne s’arrête pas au bout de 30 secondes, vérifiez votre connexion internet et actualisez la page. Si le problème persiste, adressez-vous à l’Assistance",
+        "L’application est compatible avec tous les téléphones Apple adaptés au câble Lightning, soit à partir de l’iPhone 5, ainsi qu’avec les téléphones Android qui utilisent des prises de recharge micro-USB ou USB-C. ",
+        "Vérifiez que vos connexions de câble sont insérées correctement. Joignez notre équipe d’Assistance qui vous aidera rapidement.",
+        "La durée de recharge peut varier en fonction du type de votre appareil, de la taille de votre batterie ainsi que du niveau de charge actuel. Toutefois la majorité des téléphones se rechargent entièrement en 1-2 heures, ce qui correspond à un délai de recharge standardpar un chargeur secteur mural. ",
+        "Si vous ne pouvez pas restituer votre banque d’alimentation par manque de place sur le distributeur, il est important de ne pas le laisser sans attention, car la location se poursuivra. Pour résoudre ce problème, vous pouvez utiliser l’application QrCharge pour localiser les  distributeurs proches de vous ayants des emplacements disponibles. Si vous n’arrivez  toujours pas à trouver un distributeur ou rencontrez des difficultés en rapport au processus  de restitution, merci de contacter notre équipe d’assistance pour vous faire aider. Notre  équipe est toujours disponible pour assurer une expérience pratique et agréable avec  QrCharge.",
+        "Vous n’avez pas besoin d’apporter vos câbles pour utiliser QrCharge car nos banques d’alimentation sont fournies avec des USB-C, Lightning, et câbles Micro-USB, ce qui les rend compatible avec une large gamme d’appareils, permettant de charger vos appareils sans avoir à amener vos câbles.",
+        "Soyez rassurés, l’utilisation de QrCharge est complètement sécurisée, de la même manière que l’utilisation de n’importe quelle autre banque d’alimentation. Nous collaborons avec un producteur de confiance pour pouvoir garantir de la haute qualité et des standards de sécurité. Nos banques d’alimentations ont passé des tests rigoureux et sont certifiés CE, RoHS, et FCC, des labels qui assurent la conformité avec les standards nécessaires en matière de santé, de sécurité et d’écologie. Chez QrCharge votre sécurité et satisfaction sont nos grandes priorités et nous sommes dévoués à vous assurer une expérience de location de banques d’alimentation sécurisée et fiable. "
     ]
 }
