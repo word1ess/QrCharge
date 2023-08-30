@@ -572,7 +572,7 @@ h6 {
   top: 0;
   left: 0;
   z-index: 100000;
-  height: 124px;
+  height: 96px;
   padding: 24px 0px;
 }
 .header::before {
@@ -632,6 +632,11 @@ h6 {
 .header__link:hover {
   color: #00b6ab;
 }
+.header__btn {
+  font-size: 18px;
+  padding: 10px 30px;
+}
+
 .intro {
   padding: 96px 0px 128px;
   background: #f6f7f8;
@@ -1375,7 +1380,7 @@ body {
   position: relative;
   flex: 1 1 auto;
   background: #fff;
-  padding: 124px 0px 0px 0px;
+  padding: 96px 0px 0px 0px;
   z-index: 2;
 }
 
@@ -2317,8 +2322,6 @@ body {
   .container {
     padding: 0px 24px;
   }
-}
-@media only screen and (max-width: 378px) {
   .intro__bottom h2,
   .rent__tip p,
   .price__cost,
