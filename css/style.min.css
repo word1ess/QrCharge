@@ -294,6 +294,9 @@ h6 {
   gap: 32px;
 }
 .form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1 1 50%;
 }
 .form__content h3 {
@@ -340,7 +343,7 @@ h6 {
 .form__form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   flex: 1 1 50%;
 }
 .form__qr {
@@ -366,7 +369,7 @@ h6 {
   margin: 16px 0px;
 }
 .form__input p {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 144%; /* 23.04px */
   color: #fff;
@@ -569,7 +572,7 @@ h6 {
   top: 0;
   left: 0;
   z-index: 100000;
-  height: 96px;
+  height: 124px;
   padding: 24px 0px;
 }
 .header::before {
@@ -592,6 +595,7 @@ h6 {
 .header__logo {
   position: relative;
   z-index: 3;
+  margin: 0px 32px 0px 0px;
 }
 .header__logo a {
   display: flex;
@@ -602,7 +606,6 @@ h6 {
 }
 .header__logo-img {
   display: block;
-  margin: 0px 8px 0px 0px;
   max-width: 240px;
   max-height: 45px;
 }
@@ -612,7 +615,7 @@ h6 {
 .header__menu {
   display: flex;
   gap: 10px;
-  justify-content: flex-end;
+  justify-content: center;
   flex: 1 1 auto;
   align-items: center;
 }
@@ -629,7 +632,6 @@ h6 {
 .header__link:hover {
   color: #00b6ab;
 }
-
 .intro {
   padding: 96px 0px 128px;
   background: #f6f7f8;
@@ -1041,7 +1043,7 @@ h6 {
   height: 100%;
 }
 .intro-fb {
-  padding: 0px 0px 88px;
+  background: #f6f7f8;
 }
 .intro-fb__title {
   margin: 0px 0px 16px;
@@ -1086,13 +1088,15 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 530px;
+  max-width: 600px;
+  width: 100%;
 }
 .intro-fb-bottom__text h2 {
   font-size: 40px;
   line-height: 128%;
   font-weight: 300;
   margin: 0px 0px 56px;
+  max-width: 340px;
 }
 .intro-fb__qr {
   position: relative;
@@ -1113,29 +1117,30 @@ h6 {
   background: #e9eff6;
 }
 .offer__title {
-  max-width: 500px;
+  max-width: 810px;
   margin: 0 auto;
   margin-bottom: 16px;
   text-align: center;
-  font-size: 48px;
   line-height: 128%;
 }
 .offer__subtitle {
-  font-size: 32px;
-  margin: 0px 0px 48px;
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0px 0px 56px;
   text-align: center;
+  color: #404040;
 }
 .offer__row {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  max-width: 882px;
+  gap: 32px;
+  max-width: 1368px;
   margin: 0 auto;
 }
 .offer__item {
   position: relative;
   overflow: hidden;
-  height: 328px;
+  height: 558px;
   border-radius: 40px;
 }
 .offer__item img {
@@ -1147,10 +1152,10 @@ h6 {
   object-fit: fill;
 }
 .offer__item.small {
-  flex: 0 1 calc(33% - 12px);
+  flex: 0 1 calc(33% - 16px);
 }
 .offer__item.big {
-  flex: 0 1 calc(66% - 12px);
+  flex: 0 1 calc(66% - 16px);
 }
 
 .why-fb__cards {
@@ -1182,7 +1187,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
+  max-width: 810px;
 }
 .rent-fb__phones {
   order: -1;
@@ -1195,15 +1200,15 @@ h6 {
   background: #00b6ab;
 }
 .form-fb__title {
-  font-size: 48px;
   line-height: 128%;
   margin: 0px 0px 16px;
 }
 .form-fb .form-fb__subtitle {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 144%;
   margin: 0px 0px 32px;
+  max-width: 450px;
 }
 .form-fb__qr {
   position: relative;
@@ -1233,6 +1238,7 @@ h6 {
   margin: 0px 0px 56px;
   color: #404040;
   font-size: 32px;
+  font-weight: 600;
 }
 .station-fb__slider {
   padding: 0px 0px 80px;
@@ -1369,7 +1375,7 @@ body {
   position: relative;
   flex: 1 1 auto;
   background: #fff;
-  padding: 80px 0px 0px 0px;
+  padding: 124px 0px 0px 0px;
   z-index: 2;
 }
 
@@ -1401,27 +1407,37 @@ body {
   .content {
     padding: 80px 0px 0px;
   }
-  .intro__title {
-    font-size: 56px;
+  .section,
+  .article {
+    padding: 120px 0px;
   }
   .title,
   .cup__row h2 {
     font-size: 48px;
+  }
+  .intro__title,
+  .intro-fb__title {
+    font-size: 56px;
   }
   .intro__bottom h2,
   .rent__tip p,
   .price__cost,
   .price__install h2,
   .cup__row h3,
-  .form__title {
+  .form__title,
+  .offer__subtitle {
     font-size: 40px;
+  }
+  .rent-fb .title {
+    font-size: 32px;
   }
   .rent__count,
   .rent__text h3,
   .price__free,
   .cards__title,
   .install__content p,
-  .form__social a {
+  .form__social a,
+  .station-fb__subtitle {
     font-size: 24px;
   }
   .intro__subtitle,
@@ -1432,7 +1448,8 @@ body {
   .checkbox p,
   .header__link,
   .footer__copy,
-  .footer__terms {
+  .footer__terms,
+  .form__input p {
     font-size: 18px;
   }
   .intro__bottom {
@@ -1442,6 +1459,12 @@ body {
   .intro__qr {
     width: 168px;
     height: 168px;
+  }
+  .intro-fb-bottom__text {
+    max-width: 400px;
+  }
+  .intro-fb-bottom__img {
+    max-height: 95%;
   }
   .rent__tip img {
     width: 228px;
@@ -1494,6 +1517,9 @@ body {
   .cards__card {
     padding: 32px;
   }
+  .with-phone__phones {
+    position: relative;
+  }
   .with-phone__phone-small,
   .with-phone__phone-big {
     width: 279px;
@@ -1505,11 +1531,17 @@ body {
     width: 100%;
     object-fit: cover;
   }
+  .with-phone__light {
+    width: 800px;
+  }
   .with-phone__phone-small {
-    height: 400px;
+    height: 320px;
   }
   .with-phone__phone-big {
-    height: 515px;
+    height: 400px;
+  }
+  .station-fb__subtitle {
+    margin: 0px 0px 46px;
   }
   .btn,
   .btn-bordered {
@@ -1598,14 +1630,15 @@ body {
     height: 100%;
     flex: 0 0 400px;
   }
-  .rent__img {
+  .rent__img,
+  .offer__item {
     height: 400px;
+  }
+  .offer__row {
+    gap: 24px;
   }
 }
 @media only screen and (max-width: 1280px) {
-  .intro {
-    padding: 64px 0px 104px;
-  }
   .container {
     max-width: 1100px;
   }
@@ -1613,21 +1646,34 @@ body {
     padding: 80px 0px 0px;
   }
   .section,
-  .article {
+  .article,
+  .station-fb {
     padding: 104px 0px;
   }
-  .intro__title {
-    font-size: 48px;
-    max-width: 700px;
+  .intro {
+    padding: 64px 0px 104px;
   }
-  .intro__bottom {
+  .intro__bottom,
+  .intro-fb-bottom {
     max-width: 860px;
     max-height: 480px;
     margin: 0 auto;
+    padding: 0px 80px;
   }
-  .intro__qr {
+  .intro-fb-bottom__text {
+    padding: 70px 0px;
+  }
+  .intro-fb-bottom__text h2 {
+    font-size: 32px;
+  }
+  .intro__qr,
+  .intro-fb__qr,
+  .form__qr {
     width: 144px;
     height: 144px;
+  }
+  .intro-fb-bottom__img {
+    max-height: 80%;
   }
   .rent__tip img {
     width: 204px;
@@ -1714,6 +1760,10 @@ body {
     width: 24px;
     height: 24px;
   }
+  .form__qr .form__light {
+    width: 430px;
+    height: 465px;
+  }
   .input {
     padding: 16px 20px;
   }
@@ -1749,17 +1799,53 @@ body {
   .intro__market,
   .intro__bottom h2,
   .title,
-  .cup__row h2 {
+  .cup__row h2,
+  .intro-fb-bottom__text h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .offer__title {
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  .intro__title,
+  .intro-fb__title {
+    font-size: 48px;
+    margin: 0px 0px 16px;
+  }
+  .offer__subtitle,
+  .form__title {
+    font-size: 32px;
+  }
+  .offer__subtitle {
+    margin-bottom: 40px;
+  }
+  .offer__item {
+    height: 350px;
+  }
+  .form__form {
+    gap: 16px;
+  }
+  .form-fb__title,
+  .station-fb__title,
+  .price__rate {
+    margin: 0px 0px 16px;
+  }
+  .rent-fb .title {
+    font-size: 24px;
     margin: 0px 0px 40px;
+  }
+  .form-fb .form-fb__subtitle,
+  .form__input p,
+  .input,
+  .checkbox p {
+    font-size: 16px;
   }
   .rent__tip {
     max-width: 510px;
   }
   .rent__tip p {
     max-width: 330px;
-  }
-  .price__rate {
-    margin: 0px 0px 16px;
   }
   .price__install h2 {
     margin: 0px 0px 24px;
@@ -1794,6 +1880,9 @@ body {
   }
   .slide-station-fb__img {
     flex: 0 0 400px;
+  }
+  .station-fb__subtitle {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1838,6 +1927,9 @@ body {
   .header__burger::after {
     bottom: 0;
   }
+  .header__btn {
+    display: none;
+  }
   .header__menu {
     flex-direction: column;
     justify-content: flex-start;
@@ -1872,6 +1964,9 @@ body {
     max-width: fit-content;
     transform: translate(0px, 45px);
   }
+  .header__menu .mobile .header__btn {
+    display: block;
+  }
   .header__menu.burger-active {
     transform: translate(0%, 0%);
     opacity: 1;
@@ -1895,6 +1990,7 @@ body {
     padding: 24px;
     border-radius: 32px;
     background: #f6f7f8;
+    margin: 32px 0px;
   }
   .header__menu .header__social a {
     color: #404040;
@@ -1943,8 +2039,13 @@ body {
   .with-phone__phones {
     justify-content: center;
   }
-  .with-phone__phone-big {
+  .with-phone__phone-big,
+  .rent-fb__phones .with-phone__phone-small {
     display: none;
+  }
+  .rent-fb__phones .with-phone__phone-big {
+    display: block;
+    height: 275px;
   }
   .cup__bg {
     width: 400px;
@@ -2018,6 +2119,9 @@ body {
     text-align: center;
     margin: 0px 0px 16px;
   }
+  .intro-fb-bottom__text {
+    padding: 0px;
+  }
   .slide-station-fb {
     flex-direction: column;
     height: auto;
@@ -2032,7 +2136,8 @@ body {
     transform: none;
   }
   .section,
-  .article {
+  .article,
+  .station-fb {
     padding: 32px 0px;
   }
   .price__info {
@@ -2141,6 +2246,21 @@ body {
   }
 }
 @media only screen and (max-width: 430px) {
+  .intro__subtitle {
+    font-size: 16px;
+  }
+  .intro__bottom h2,
+  .intro-fb-bottom h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .intro-fb-bottom__text {
+    align-items: center;
+  }
+  .form-fb__title,
+  .station-fb__title {
+    font-size: 32px;
+  }
   .why__more {
     text-align: center;
     max-width: 100%;
@@ -2152,17 +2272,53 @@ body {
   .get__card {
     gap: 6px;
   }
-}
-@media only screen and (max-width: 378px) {
+  .offer__title,
+  .offer__title,
+  .station-fb__title {
+    margin: 0px 0px 6px;
+  }
+  .station-fb__title,
+  .offer__subtitle,
+  .offer__title {
+    font-size: 30px !important;
+  }
+  .station-fb__title,
+  .offer__subtitle,
+  .offer__title,
+  .station-fb__subtitle,
+  .title {
+    text-align: left;
+    font-size: 32px;
+  }
+  .station-fb__subtitle {
+    font-size: 18px;
+  }
+  .intro-fb__title,
   .intro__title {
+    margin: 0px 0px 5px;
+    text-align: center;
     font-size: 40px;
   }
-  .title {
-    font-size: 40px;
+  .form__row {
+    gap: 24px;
+  }
+  .form-fb .form-fb__subtitle {
+    margin: 0px;
+  }
+  .station-fb__slider {
+    padding: 0px 0px 32px;
+  }
+  .rent-fb {
+    padding: 20px 0px;
+  }
+  .rent-fb .title {
+    font-size: 32px;
   }
   .container {
     padding: 0px 24px;
   }
+}
+@media only screen and (max-width: 378px) {
   .intro__bottom h2,
   .rent__tip p,
   .price__cost,
