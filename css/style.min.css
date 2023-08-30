@@ -636,8 +636,8 @@ h6 {
   color: #00b6ab;
 }
 .header__btn {
-  font-size: 18px;
-  padding: 10px 30px;
+  font-size: 18px !important;
+  padding: 10px 30px !important;
 }
 
 .intro {
