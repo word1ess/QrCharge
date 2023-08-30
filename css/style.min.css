@@ -346,8 +346,21 @@ h6 {
 .form__form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  flex: 1 1 50%;
+  gap: 16px;
+}
+.form__form .form__input p {
+  font-size: 16px;
+}
+.form__form .input, .form__form .checkbox p {
+  font-size: 16px;
+}
+.form__form .checkbox p::after, .form__form .checkbox p::before {
+  width: 28px;
+  height: 28px;
+}
+.form__form .form__button {
+  padding: 14px 35px;
+  font-size: 14px;
 }
 .form__qr {
   position: relative;
