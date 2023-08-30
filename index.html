@@ -26,25 +26,57 @@
                     <img src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
                 </a>
             </div>
-            <img src="img/svgicons/lang.svg" alt="lang">
-            <label id="language" name="language" id="language" for="select" class="select">
-                <input type="radio" name="list" value="not_changed" id="bg" checked />
-                <input type="radio" name="list" value="not_changed" id="select">
-                <div class="items">
-                    <input type="radio" name="list" value="en" id="list[0]" checked>
-                    <label for="list[0]">English</label>
-                    <input type="radio" name="list" value="fr" id="list[1]">
-                    <label for="list[1]">Français</label>
-                    <span id="text">Select language</span>
-                </div>
-            </label>
+            <div class="lang" data-currLang="English">
+                <header class="lang__header">
+                    <img src="img/svgicons/lang.svg" alt="lang">
+                    <p class="lang__currLang">English</p>
+                </header>
+                <main class="lang__body">
+                    <ul>
+                        <li class="selector-for-lang" data-select-lang="English">English</li>
+                        <li class="selector-for-lang" data-select-lang="French">Français</li>
+                    </ul>
+                </main>
+            </div>
             <div class="header__burger">
                 <span>
 
                 </span>
             </div>
             <nav class="header__menu">
-                <ul><li><a class="header__link" href="./for-business.html">For business</a></li></ul>
+
+                <div class="decstop"><ul><li><a class="header__link" href="./for-business.html">For business</a></li></ul></div>
+                <div class="mobile">
+                    <div class="lang" data-currLang="English">
+                        <header class="lang__header">
+                            <img src="img/svgicons/lang.svg" alt="lang">
+                            <p class="lang__currLang">English</p>
+                        </header>
+                        <main class="lang__body">
+                            <ul>
+                                <li class="selector-for-lang" data-select-lang="English">English</li>
+                                <li class="selector-for-lang" data-select-lang="French">Français</li>
+                            </ul>
+                        </main>
+                    </div>
+                    <ul class="header__links">
+                        <li>
+                            <a class="header__link" href="./for-business.html">For business</a>
+                        </li>
+                    </ul>
+                    <img src="img/svgicons/logo-small-white.svg" alt="logo-small">
+                    <h2 class="form__title">Stay connected with QrCharge</h2>
+                    <div class="header__social">
+                        <div class="form__social">
+                            <img src="img/svgicons/mail.svg" alt="mail">
+                            <a href="mailto:qrcharge@gmail.com">qrcharge@gmail.com</a>
+                        </div>
+                        <div class="form__social">
+                            <img src="img/svgicons/phone.svg" alt="phone">
+                            <a href="tel:+123 45 567 89 10">+123 45 567 89 10</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </div>
